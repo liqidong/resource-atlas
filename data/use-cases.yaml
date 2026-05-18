@@ -74,3 +74,18 @@ use_cases:
     description: Compare open-source and hosted document parsers by layout quality, table/formula handling, offline boundary, license, deployment burden, and structured output.
     resources:
       - res_20260518_mineru_603de17
+  build-agent-memory-layer:
+    title: Build an agent memory layer
+    description: Study systems that persist coding-agent context across sessions with hooks, retrieval, summarization, provenance, and cross-agent access.
+    resources:
+      - res_20260518_agentmemory_9061da5
+  compare-agent-memory-systems:
+    title: Compare agent memory systems
+    description: Compare built-in memory files, MCP memory servers, managed memory APIs, and local-first memory engines by capture method, retrieval quality, privacy boundary, and setup cost.
+    resources:
+      - res_20260518_agentmemory_9061da5
+  study-agent-hooks-and-mcp-memory:
+    title: Study agent hooks and MCP memory
+    description: Learn how lifecycle hooks, REST endpoints, MCP tools, and local viewers can work together to capture and recall coding-agent context.
+    resources:
+      - res_20260518_agentmemory_9061da5

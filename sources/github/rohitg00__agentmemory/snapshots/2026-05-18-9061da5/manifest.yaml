@@ -1,0 +1,77 @@
+source: https://github.com/rohitg00/agentmemory
+fetched_at: 2026-05-18
+source_ref: 9061da56d5caf9499f0bfb66f5cc35e648c1fb25
+commit_date: 2026-05-17 14:05:56 +0100
+commit_subject: "chore(release): v0.9.18 (#459)"
+content_hash: 2833680cff1a267837d82fb3ad417de6bb3014b66b560afadb409215ab0bdbbc
+fetch_method: git clone --depth=1
+files_in_upstream_clone: 496
+typescript_javascript_files: 309
+typescript_source_files: 160
+test_files: 93
+markdown_files: 38
+plugin_files: 22
+integration_files: 16
+benchmark_files: 17
+temporary_clone_size: 33M
+github_api:
+  observed_at: 2026-05-18
+  created_at: 2026-02-25T07:32:52Z
+  pushed_at: 2026-05-17T13:49:23Z
+  stars: 11666
+  forks: 980
+  watchers: 11666
+  subscribers: 34
+  open_issues_plus_prs: 110
+  commit_count: 344
+  has_pages: false
+  homepage: https://www.producthunt.com/products/agent-memory-dev
+  license_spdx: Apache-2.0
+  default_branch: main
+  primary_language: TypeScript
+  latest_release: v0.9.18
+  latest_release_published_at: 2026-05-17T13:08:05Z
+  languages:
+    TypeScript: 1901850
+    HTML: 187650
+    JavaScript: 186230
+    CSS: 35111
+    Python: 14411
+    Shell: 11092
+    Dockerfile: 5107
+npm:
+  observed_at: 2026-05-18
+  package: "@agentmemory/agentmemory"
+  version: 0.9.18
+  published_at: 2026-05-17T13:08:58.790Z
+  package_license: Apache-2.0
+  node_engine: ">=20.0.0"
+  tarball_file_count: 115
+  tarball_unpacked_size: 4845732
+  provenance_attestation: true
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - node_modules
+  - npm tarball
+  - image/video assets
+  - git metadata
+exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, validation result, and evidence summary instead of vendoring the full memory server.
+validation:
+  - command: npm install --ignore-scripts --no-audit --no-fund --omit=optional
+    working_directory: temporary upstream clone
+    output: failed with npm ERESOLVE peer dependency conflict between @anthropic-ai/claude-agent-sdk and @anthropic-ai/sdk
+  - command: npm install --legacy-peer-deps --ignore-scripts --no-audit --no-fund
+    working_directory: temporary upstream clone
+    output: dependency install required legacy peer dependency resolution in the inspection environment
+  - command: npm test
+    working_directory: temporary upstream clone
+    output: 91 test files passed; 1007 tests passed
+  - command: npm run build
+    working_directory: temporary upstream clone
+    output: failed in the inspection environment because the temporary install could not load the rolldown native binding
+license: Apache-2.0
+sensitivity: public
+publishable: partial
+notes: Full source was reviewed from a temporary clone and not committed into this repository. Tests passed after dependency resolution, but fresh source install and build reproducibility need caveats.

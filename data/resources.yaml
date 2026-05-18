@@ -378,3 +378,87 @@ resources:
       pypi_version: 3.1.14
       github_license_spdx: NOASSERTION
       local_license_file: MinerU Open Source License
+  - resource_id: res_20260518_agentmemory_9061da5
+    canonical_slug: agentmemory
+    aliases:
+      - agentmemory
+      - Agent Memory
+      - rohitg00/agentmemory
+      - "@agentmemory/agentmemory"
+      - "@agentmemory/mcp"
+    title: agentmemory
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/rohitg00/agentmemory
+    canonical_source: https://github.com/rohitg00/agentmemory
+    local_source: sources/github/rohitg00__agentmemory/
+    source_fingerprints:
+      - git:9061da56d5caf9499f0bfb66f5cc35e648c1fb25
+      - tree-content-sha256:2833680cff1a267837d82fb3ad417de6bb3014b66b560afadb409215ab0bdbbc
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: 9061da56d5caf9499f0bfb66f5cc35e648c1fb25
+    upstream_ref: 9061da56d5caf9499f0bfb66f5cc35e648c1fb25
+    upstream_version: v0.9.18 / main@9061da5
+    latest_release: v0.9.18
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: useful_fast_moving
+    recommendation: recommended_with_caveats
+    fit_for_user: high
+    time_to_value: medium
+    setup_cost: medium
+    maintenance_burden: medium_high
+    risk_level: high
+    evidence_quality: high
+    will_i_actually_use_this: maybe
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: en
+    redaction_needed: no
+    tags:
+      - agent-memory
+      - persistent-memory
+      - coding-agent
+      - mcp
+      - agent-hooks
+      - memory-retrieval
+      - claude-code
+      - codex-cli
+      - agent-framework
+      - local-first
+      - iii-engine
+      - open-source-template
+    use_cases:
+      - build-agent-memory-layer
+      - compare-agent-memory-systems
+      - study-agent-hooks-and-mcp-memory
+    recommended_for:
+      - 学习跨 Claude Code、Codex、Cursor、Gemini CLI 等 agent 的持久记忆层设计
+      - 参考 hooks、REST、MCP、viewer、audit、export/import、retention 和 search 如何组合
+      - 比较 built-in memory、MCP memory server、local-first memory service 的真实边界
+    not_recommended_for:
+      - 不能接受开发 prompt、tool input/output、文件路径和错误信息被本地记忆系统记录的场景
+      - 想要完全零维护、无外部运行时、无 npm/iii-engine 依赖的用户
+      - 没有先审查 LLM provider、embedding provider、mesh/team sync、remote deploy 和 bearer-token 边界的隐私敏感工作流
+    confidence: high
+    community_signal:
+      observed_at: 2026-05-18
+      stars: 11666
+      forks: 980
+      watchers: 11666
+      subscribers: 34
+      open_issues_plus_prs: 110
+      commit_count: 344
+      github_pages: false
+      homepage: https://www.producthunt.com/products/agent-memory-dev
+      latest_release: v0.9.18
+      latest_release_published_at: 2026-05-17T13:08:05Z
+      npm_package: "@agentmemory/agentmemory"
+      npm_version: 0.9.18
+      npm_published_at: 2026-05-17T13:08:58.790Z
+      github_license_spdx: Apache-2.0
+      local_license_file: Apache-2.0

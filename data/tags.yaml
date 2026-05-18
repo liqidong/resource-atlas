@@ -143,3 +143,24 @@ tags:
   office-document-parsing:
     aliases: [docx-pptx-xlsx]
     description: Resources that parse Office formats such as DOCX, PPTX, and XLSX.
+  agent-memory:
+    aliases: [ai-agent-memory, memory-server]
+    description: Resources that store, retrieve, consolidate, or sync long-term memory for AI agents.
+  persistent-memory:
+    aliases: [long-term-memory, durable-memory]
+    description: Memory systems intended to persist across sessions rather than living only in a prompt or context window.
+  coding-agent:
+    aliases: [ai-coding-agent, code-agent]
+    description: Resources built for coding agents, developer copilots, or agentic software engineering workflows.
+  agent-hooks:
+    aliases: [lifecycle-hooks, tool-hooks]
+    description: Agent lifecycle hooks that capture, transform, or inject context around prompts, tools, sessions, and compaction.
+  memory-retrieval:
+    aliases: [hybrid-memory-search, recall]
+    description: Search and retrieval strategies for selecting relevant memories under a token budget.
+  codex-cli:
+    aliases: [openai-codex, codex-plugin]
+    description: Resources that integrate with OpenAI Codex CLI or Codex plugin workflows.
+  iii-engine:
+    aliases: [iii-sdk]
+    description: Resources built on the iii engine or iii SDK primitives such as functions, triggers, KV state, streams, and telemetry.
