@@ -1,0 +1,61 @@
+source: https://github.com/Z4nzu/hackingtool
+fetched_at: 2026-05-18
+source_ref: 01a51bbca6d0c7a20696aeef9ed92b143e26b10c
+commit_date: 2026-03-15T20:03:08+05:30
+commit_subject: "Restructure for v2.0.0 with new tools, features, and UI updates (#590)"
+content_hash: f0d318df9435ce45c18a76c6452b404c3caae76b0769726bfe900073b6fb0787
+fetch_method: git clone --depth=1 plus GitHub API and GitHub web page
+files_in_upstream_clone: 64
+temporary_clone_size: 2.8M
+github_api:
+  observed_at: 2026-05-18
+  created_at: 2020-04-11T09:21:31Z
+  updated_at: 2026-05-18T10:50:06Z
+  pushed_at: 2026-03-15T14:33:08Z
+  stars: 75234
+  forks: 8483
+  subscribers: 1430
+  open_issues_plus_prs: 108
+  has_pages: false
+  homepage:
+  license_spdx: MIT
+  primary_language: Python
+release:
+  latest: none
+tags:
+  - tag: v1.1.0
+    commit: 66534bc8746de047e2b81c01b197d30dccfbf0d2
+  - tag: v1.0
+    commit: 5963b0259d1541043e82d5cb0e7c10258a7c06bd
+inventory:
+  readme_version: v2.0.0
+  tool_categories: 20
+  hackingtool_classes: 185
+  hackingtools_collection_classes: 32
+  python_tool_files: 33
+  install_and_run_command_fields: 317
+  explicit_os_support_fields: 89
+  archived_tool_entries_seen: 2
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - screenshots and image assets
+  - full third-party tool repositories referenced by install commands
+  - compiled bytecode generated during local compile validation
+  - git metadata
+exclusion_reason: Keep Resource Atlas lightweight and avoid mirroring a dual-use command launcher or any third-party offensive-security repositories.
+validation:
+  - command: python3 -m compileall -q .
+    working_directory: temporary upstream clone
+    output: Python syntax compile passed with Python 3.12.13
+  - command: inspect README, installer scripts, core command runner, menu registry, selected high-risk categories, Docker files, workflows, and license
+    working_directory: temporary upstream clone
+    output: Reviewed for source structure, install boundary, third-party execution, dual-use categories, and evidence limits
+  - command: GitHub API and repository metadata fetch
+    working_directory: Resource Atlas worktree
+    output: Repository metadata, tags, license, default branch, and community signals captured
+license: MIT
+sensitivity: public_dual_use_security
+publishable: partial
+notes: Full source was reviewed from a temporary clone and not committed. No third-party tools were installed or run.

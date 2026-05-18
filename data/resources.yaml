@@ -723,3 +723,77 @@ resources:
       parent_default_branch_ref: 61522e103e61601c553b4544abcd53fa7ebf9f1d
       parent_commits_ahead_of_reviewed_fork: 76
       local_license_file: Apache-2.0
+  - resource_id: res_20260518_hackingtool_01a51bb
+    canonical_slug: hackingtool
+    aliases:
+      - hackingtool
+      - HackingTool
+      - Z4nzu/hackingtool
+      - All-in-One Hacking Tool
+    title: HackingTool
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/Z4nzu/hackingtool
+    canonical_source: https://github.com/Z4nzu/hackingtool
+    local_source: sources/github/Z4nzu__hackingtool/
+    source_fingerprints:
+      - git:01a51bbca6d0c7a20696aeef9ed92b143e26b10c
+      - tree-content-sha256:f0d318df9435ce45c18a76c6452b404c3caae76b0769726bfe900073b6fb0787
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: 01a51bbca6d0c7a20696aeef9ed92b143e26b10c
+    upstream_ref: 01a51bbca6d0c7a20696aeef9ed92b143e26b10c
+    upstream_version: master@01a51bb / README v2.0.0
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: watchlist
+    maturity: active_high_risk
+    recommendation: not_recommended_for_direct_use
+    fit_for_user: low
+    time_to_value: medium
+    setup_cost: high
+    maintenance_burden: high
+    risk_level: high
+    evidence_quality: medium_high
+    will_i_actually_use_this: no
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: en
+    redaction_needed: no
+    tags:
+      - cybersecurity
+      - penetration-testing
+      - red-team-tools
+      - security-toolkit
+      - tool-aggregator
+      - command-runner
+      - supply-chain-risk
+      - dual-use-security
+    use_cases:
+      - study-security-tool-aggregators
+      - evaluate-dual-use-install-boundaries
+    recommended_for:
+      - 研究 all-in-one 安全工具聚合器如何组织菜单、标签、系统检测和安装命令
+      - 作为高风险安装边界、第三方工具供应链和 dual-use scope 的反面/谨慎案例
+      - 从防守视角盘点哪些上游工具需要单独评估，而不是盲信聚合器
+    not_recommended_for:
+      - 日常直接安装或在个人主力机器上运行一键脚本
+      - 未授权目标、真实公共网络、社工、DDoS、payload、RAT、C2 或持久化操作
+      - 想找高质量 AI/agent 资源、成熟蓝队平台、可审计企业安全产品或低风险学习材料
+    confidence: high
+    community_signal:
+      observed_at: 2026-05-18
+      stars: 75234
+      forks: 8483
+      subscribers: 1430
+      open_issues_plus_prs: 108
+      github_pages: false
+      homepage:
+      github_license_spdx: MIT
+      local_license_file: MIT
+      primary_language: Python
+      latest_release: none
+      latest_tag: v1.1.0
+      readme_version: v2.0.0

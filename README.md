@@ -23,6 +23,7 @@ This repo is not a bookmark list. Each durable entry should answer:
 | [CLI-Anything](wiki/resources/cli-anything.md) | GitHub repo | Recommended with caveats | Agent-native CLI harness generation, CLI-Hub registry, skill packaging, GUI-agent alternatives |
 | [MinerU](wiki/resources/mineru.md) | GitHub repo | Recommended with caveats | Parsing PDFs, scanned docs, images, and Office files into Markdown/JSON for RAG and agent workflows |
 | [Architecture Diagram Generator](wiki/resources/architecture-diagram-generator.md) | Agent skill | Recommended with caveats | Fast dark-theme HTML/SVG architecture diagrams, Claude custom skill packaging, technical documentation visuals |
+| [HackingTool](wiki/resources/hackingtool.md) | GitHub repo | Not recommended for direct use | Cautionary review of a high-risk security tool aggregator, installer boundary, and dual-use command-launcher pattern |
 
 ## Use-Case Entrypoints
 
@@ -51,6 +52,8 @@ This repo is not a bookmark list. Each durable entry should answer:
 - [Create architecture diagrams](wiki/use-cases/create-architecture-diagrams.md)
 - [Document system architecture](wiki/use-cases/document-system-architecture.md)
 - [Study agent skill packaging](wiki/use-cases/study-agent-skill-packaging.md)
+- [Study security tool aggregators](wiki/use-cases/study-security-tool-aggregators.md)
+- [Evaluate dual-use install boundaries](wiki/use-cases/evaluate-dual-use-install-boundaries.md)
 
 ## Repository Map
 

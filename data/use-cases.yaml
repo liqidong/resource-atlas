@@ -126,3 +126,13 @@ use_cases:
     description: Use trading-agent projects as cautionary references for model uncertainty, data quality, prompt injection, financial advice boundaries, and evaluation gaps.
     resources:
       - res_20260518_tradingagents_589b351
+  study-security-tool-aggregators:
+    title: Study security tool aggregators
+    description: Compare all-in-one security tool menus by source quality, maintenance, legal/ethical scope, install safety, and whether they add value beyond linking upstream tools.
+    resources:
+      - res_20260518_hackingtool_01a51bb
+  evaluate-dual-use-install-boundaries:
+    title: Evaluate dual-use install boundaries
+    description: Review high-risk installers and command launchers that fetch third-party offensive-security tools, require elevated privileges, or run network-affecting commands.
+    resources:
+      - res_20260518_hackingtool_01a51bb

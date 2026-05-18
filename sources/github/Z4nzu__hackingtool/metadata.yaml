@@ -1,0 +1,25 @@
+source_url: https://github.com/Z4nzu/hackingtool
+source_kind: github
+owner: Z4nzu
+repo: hackingtool
+default_branch: master
+reviewed_ref: 01a51bbca6d0c7a20696aeef9ed92b143e26b10c
+reviewed_at: 2026-05-18
+license: MIT
+github_license_spdx: MIT
+github_api_observed_at: 2026-05-18
+github_stars: 75234
+github_forks: 8483
+github_subscribers: 1430
+github_open_issues_plus_prs: 108
+github_pages: false
+homepage:
+primary_language: Python
+latest_release: none
+latest_tag: v1.1.0
+readme_version: v2.0.0
+tool_classes: 185
+tool_categories: 20
+python_tool_files: 33
+resource_id: res_20260518_hackingtool_01a51bb
+snapshot: snapshots/2026-05-18-01a51bb/

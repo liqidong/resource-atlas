@@ -1,5 +1,6 @@
 # Resource Atlas Log
 
+- 2026-05-18 | full-analysis | added `hackingtool` | source `Z4nzu/hackingtool@01a51bb` | sequential source/value review fallback; watchlist/not recommended for direct use due dual-use categories, privileged install scripts, third-party tool execution, and weak runtime validation
 - 2026-05-18 | full-analysis | added `yao-open-prompts` | source `yaojingang/yao-open-prompts@fd1fdf0` | multi-agent intake requested as default going forward
 - 2026-05-18 | full-analysis | added `local-deep-researcher` | source `langchain-ai/local-deep-researcher@e172109` | multi-agent intake; added learning to verify local/private network boundaries
 - 2026-05-18 | full-analysis | added `agentmemory` | source `rohitg00/agentmemory@9061da5` | local simulated source/value/integrator review; recommended with caveats for sensitive hook-captured memory boundaries

@@ -16,7 +16,7 @@ Machine-readable source of truth: [`data/resources.yaml`](../data/resources.yaml
 
 ## Watchlist
 
-None yet.
+- [HackingTool](resources/hackingtool.md) — high-star all-in-one security tool aggregator; useful as a cautionary reference for dual-use install and command-runner boundaries, not recommended for direct use.
 
 ## Rejected
 

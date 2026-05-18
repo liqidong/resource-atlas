@@ -215,3 +215,27 @@ tags:
   agent-tooling:
     aliases: [agent-tools, tool-use]
     description: Tooling that helps AI agents discover, install, invoke, or validate external capabilities.
+  cybersecurity:
+    aliases: [security]
+    description: Resources about security testing, defensive security, or dual-use security workflows.
+  penetration-testing:
+    aliases: [pentest]
+    description: Resources used for authorized penetration testing, lab assessment, and security validation.
+  red-team-tools:
+    aliases: [adversary-emulation]
+    description: Tools and references used for red-team operations or adversary-emulation study.
+  security-toolkit:
+    aliases: [security-tools]
+    description: Bundles or catalogs of security tools across multiple testing domains.
+  tool-aggregator:
+    aliases: [tool-catalog, tool-launcher]
+    description: Resources that collect, install, or launch many third-party tools from one interface.
+  command-runner:
+    aliases: [shell-runner]
+    description: Tools whose primary behavior is executing shell commands, package managers, or external binaries.
+  supply-chain-risk:
+    aliases: [installer-risk, dependency-risk]
+    description: Resources where trust depends on install scripts, third-party dependencies, package managers, or fetched code.
+  dual-use-security:
+    aliases: [dual-use]
+    description: Security resources that can support legitimate testing but can also enable misuse outside authorized scope.
