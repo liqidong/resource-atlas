@@ -62,3 +62,22 @@ learnings:
       - docs/intake-policy.md
       - scripts/validate-atlas.rb
     note: This turns the repository from user-driven note taking into agent-managed resource stewardship.
+  - learning_id: learn_20260518_long_term_atlas_stewardship
+    date: 2026-05-18
+    type: preference
+    trigger: User described the long-term vision that Resource Atlas agents should learn from the growing library, understand the user's interests, suggest new resources, and refresh stale entries with user review.
+    root_cause: The stewardship contract defined agent responsibility for intake, but did not yet capture the larger ambition of an evolving agent-managed resource memory and interest model.
+    future_rule: Agents should treat accumulated resources, use cases, judgments, and learnings as evidence for the user's evolving interest model; use it to propose candidates and refreshes, while keeping user approval before proactive discoveries become canonical full analyses.
+    applies_to:
+      - agent-onboarding
+      - proactive-discovery
+      - refresh-update
+      - resource-review
+      - interest-modeling
+    status: active
+    promoted_to:
+      - AGENTS.md
+      - README.md
+      - docs/stewardship-vision.md
+      - docs/update-policy.md
+    note: This records the phase change from command-following intake to long-term agent stewardship.

@@ -21,3 +21,14 @@ Resource updates preserve judgment history.
 6. Review whether old judgment still holds.
 7. Append `Update History`.
 8. Update data and README only if recommendation or discoverability changed.
+
+## Stewardship Refresh Signals
+
+Agents should watch for refresh needs that emerge from the atlas itself:
+
+- Upstream repositories have new commits, releases, major README changes, or meaningful issue/PR shifts.
+- A newer successor or competing resource appears and may change the old recommendation.
+- A resource's original use case becomes more or less important based on later accepted entries.
+- The user's repeated judgments reveal that a previous fit, risk, or "will I use this" assessment should be revisited.
+
+For proactive refresh, propose the reason and expected scope first when the change would rewrite judgment, public positioning, or README discoverability.

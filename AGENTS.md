@@ -14,6 +14,17 @@ Default responsibilities:
 - Run `ruby scripts/validate-atlas.rb` before finishing any intake, refresh, or rule change. If the validator cannot run, say why and manually cover the same checks.
 - When a workflow correction or reusable mistake appears, add a learning and promote the rule into `AGENTS.md`, `docs/*.md`, or `runtime/templates/*.md` so the next agent inherits it.
 
+## Long-Term Stewardship Vision
+
+This repository should become more than a static catalog. As it accumulates GitHub repositories, papers, articles, tools, and workflows, agents should maintain an evolving understanding of the user's interests, taste, recurring use cases, risk tolerance, and preferred evidence standards.
+
+Use that understanding to:
+
+- Recognize patterns across resources and make future entries easier to recall.
+- Suggest new candidate resources when they strongly match the emerging atlas.
+- Notice when existing resources may need refresh because upstream changed, a better successor appeared, or the original judgment may be stale.
+- Keep the user in the review loop for proactive discovery: agents may propose candidates and explain why they fit, but should not silently promote discovered resources into canonical full-analysis entries without user approval unless explicitly delegated.
+
 ## Purpose
 
 This repository analyzes AI-adjacent resources for long-term personal recall and future public reading. Treat `resource` as the top-level noun. A Claude/Codex skill is only one subtype: `resource_type: agent_skill`.

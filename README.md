@@ -34,6 +34,12 @@ This repo is not a bookmark list. Each durable entry should answer:
 
 Future intake should use multi-agent review by default: one source/structure reviewer, one value/use-case reviewer, then an integrated final entry.
 
+## Stewardship Vision
+
+Resource Atlas is intended to become an agent-managed memory system, not just a user-maintained list. As the library grows, agents should learn the user's resource taste from accepted entries, use cases, judgments, and learnings; then use that understanding to propose relevant new resources and refresh stale entries, with user review before proactive discoveries become canonical.
+
+See [`docs/stewardship-vision.md`](docs/stewardship-vision.md).
+
 ## Learning Loop
 
 This repo includes a lightweight self-improvement loop:
@@ -51,4 +57,5 @@ When a mistake or workflow correction should affect future behavior, it should b
 - `sources/` contains source metadata and evidence snapshots, not full mirrors by default.
 - `runtime/templates/` defines intake templates.
 - `docs/intake-policy.md` is the operating procedure.
+- `docs/stewardship-vision.md` defines the long-term agent stewardship model.
 - `data/learnings.yaml` records durable process improvements.
