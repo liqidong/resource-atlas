@@ -4,6 +4,7 @@ resource_id: res_20260518_local_deep_researcher_e172109
 slug: local-deep-researcher
 canonical_slug: local-deep-researcher
 aliases:
+  - local-deep-researcher
   - Local Deep Researcher
   - ollama-deep-researcher
 resource_type: github_repo

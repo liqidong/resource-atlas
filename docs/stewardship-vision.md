@@ -25,8 +25,8 @@ Agents may use the interest model to propose new candidate resources, especially
 
 Proactive discovery must keep a human review gate:
 
-- Candidates may be proposed, queued, or written as quick cards.
-- Full-analysis promotion should require user approval unless the user explicitly delegates that authority for a scoped task.
+- Candidates may be proposed in conversation, or recorded as non-canonical candidate notes if the user asks to queue them.
+- Canonical quick-card or full-analysis promotion requires user approval unless the user explicitly delegates that authority for a scoped task.
 - Recommendations should explain why the candidate fits the atlas and what evidence is still missing.
 
 ## Proactive Refresh

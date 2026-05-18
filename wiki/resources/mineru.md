@@ -22,14 +22,14 @@ last_checked: 2026-05-18
 update_status: current
 review_status: reviewed
 lifecycle_status: shortlisted
-maturity: mature
+maturity: mature_project_unverified_workload
 recommendation: recommended_with_caveats
 fit_for_user: high
 time_to_value: medium
 setup_cost: high
 maintenance_burden: high
 risk_level: medium
-evidence_quality: high
+evidence_quality: medium_high
 will_i_actually_use_this: yes
 public_ready: yes
 private_notes: no
@@ -244,8 +244,8 @@ Judgment axes:
 - time to value: medium
 - setup cost: high for local production, low/medium for online demo evaluation
 - maintenance burden: high
-- maturity: mature
-- evidence quality: high for structure and claims, medium for real-world parsing quality
+- maturity: mature project, unverified for my real workload
+- evidence quality: medium-high overall: high for structure and claims, medium for real-world parsing quality
 - risk level: medium
 
 ## When To Remember This

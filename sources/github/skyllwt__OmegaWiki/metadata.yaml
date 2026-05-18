@@ -1,0 +1,21 @@
+source_url: https://github.com/skyllwt/OmegaWiki
+source_kind: github
+owner: skyllwt
+repo: OmegaWiki
+default_branch: main
+reviewed_ref: 1fd1e5856e09e5ccc36d31845af201351f8a3413
+reviewed_at: 2026-05-18
+license: MIT
+github_license_spdx: MIT
+github_api_observed_at: 2026-05-18
+github_stars: 683
+github_forks: 104
+github_open_issues: 1
+github_open_prs: 0
+github_pages: false
+homepage:
+latest_tag: v1.0.0
+github_releases: none
+changelog_version: 1.4.0
+resource_id: res_20260518_omegawiki_1fd1e58
+snapshot: snapshots/2026-05-18-1fd1e58/

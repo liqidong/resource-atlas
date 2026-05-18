@@ -4,6 +4,7 @@ resource_id: res_20260518_omegawiki_1fd1e58
 slug: omegawiki
 canonical_slug: omegawiki
 aliases:
+  - omegawiki
   - OmegaWiki
   - ΩmegaWiki
   - skyllwt/OmegaWiki
@@ -30,7 +31,7 @@ time_to_value: high
 setup_cost: high
 maintenance_burden: high
 risk_level: high
-evidence_quality: high
+evidence_quality: medium_high
 will_i_actually_use_this: yes
 public_ready: yes
 private_notes: no

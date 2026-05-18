@@ -31,7 +31,7 @@ time_to_value: medium
 setup_cost: medium
 maintenance_burden: medium_high
 risk_level: high
-evidence_quality: high
+evidence_quality: medium_high
 will_i_actually_use_this: maybe
 public_ready: yes
 private_notes: no
@@ -241,7 +241,7 @@ Judgment axes:
 - setup cost: medium
 - maintenance burden: medium/high
 - maturity: useful but fast-moving
-- evidence quality: high for source/test structure; medium for long-term operational reliability
+- evidence quality: medium-high overall: high for source/test structure, medium for install/build reproducibility and long-term operational reliability
 - risk level: high because it captures sensitive development context
 
 ## When To Remember This

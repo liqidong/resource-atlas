@@ -1,6 +1,6 @@
 # Intake Policy
 
-Resource Atlas has three intake modes.
+Resource Atlas has three canonical intake modes plus non-canonical candidate and rejected-note modes.
 
 ## Default Agent Posture
 
@@ -49,7 +49,7 @@ separate integration commit for cross-resource links or shared cleanup.
 
 ## Quick Card
 
-Use when a resource is interesting but not yet worth full analysis.
+Use when a user-provided or user-approved resource is interesting but not yet worth full analysis.
 
 Required writes:
 
@@ -57,6 +57,28 @@ Required writes:
 - `data/resources.yaml` entry with `lifecycle_status: quick_note`
 
 Do not update README unless the resource is immediately important.
+
+Do not use canonical quick cards for proactive discoveries without user approval. For unapproved proactive discovery, propose the candidate in conversation or, if the user asks to keep a queue, write a non-canonical candidate note under `wiki/candidates/{slug}.md` without adding it to `data/resources.yaml`.
+
+## Candidate Note
+
+Use when an agent proactively discovers a possible future resource and the user wants it queued without approving intake yet.
+
+Required writes:
+
+- `wiki/candidates/{slug}.md`
+
+Do not update `data/resources.yaml`, README, use-case pages, or source manifests for an unapproved candidate note unless explicitly delegated.
+
+## Rejected / Non-Fit
+
+Use when a reviewed item should be remembered as not worth intake, especially to avoid re-suggesting it later.
+
+Required writes:
+
+- `wiki/rejected/{slug}.md`
+
+Rejected/non-fit notes are not canonical resources by default. Do not add them to `data/resources.yaml` unless the user explicitly wants rejected resources tracked there with `lifecycle_status: rejected`.
 
 ## Full Analysis
 
@@ -86,6 +108,8 @@ Before marking a full analysis public-ready or updating README:
 - Make `recommendation` in `data/resources.yaml` and page frontmatter as specific as the narrative judgment. Use values such as `recommended_with_caveats` when caveats materially change how the resource should be used.
 - Separate stable evidence from volatile community signal. Commit refs, content hashes, license files, and validation results are evidence; stars, forks, and issue counts are advisory snapshots with `observed_at` dates.
 - Write validation commands and source paths in public artifacts as repo-relative or temporary-clone-relative paths. Do not publish absolute `/tmp`, home-directory, or machine-specific paths unless they are necessary evidence.
+
+After batch intake or multi-branch integration, do not only check that YAML parses. Confirm `ruby scripts/validate-atlas.rb` passes after it has checked page/data field calibration, `wiki/index.md`, source metadata/manifests, learning pages, local links, and branch scope.
 
 ## Refresh / Update
 

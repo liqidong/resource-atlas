@@ -23,7 +23,7 @@ resources:
     update_status: current
     review_status: reviewed
     lifecycle_status: shortlisted
-    maturity: experimental_useful
+    maturity: useful
     recommendation: recommended
     fit_for_user: high
     time_to_value: low
@@ -95,7 +95,7 @@ resources:
     recommendation: recommended_with_caveats
     fit_for_user: high
     time_to_value: medium
-    setup_cost: high
+    setup_cost: medium
     maintenance_burden: high
     risk_level: medium
     evidence_quality: high
@@ -174,7 +174,7 @@ resources:
     setup_cost: high
     maintenance_burden: high
     risk_level: high
-    evidence_quality: high
+    evidence_quality: medium_high
     will_i_actually_use_this: yes
     public_ready: yes
     private_notes: no
@@ -250,14 +250,14 @@ resources:
     update_status: current
     review_status: reviewed
     lifecycle_status: shortlisted
-    maturity: useful
+    maturity: experimental_useful
     recommendation: recommended_with_caveats
     fit_for_user: high
     time_to_value: medium
-    setup_cost: medium
+    setup_cost: high
     maintenance_burden: high
     risk_level: high
-    evidence_quality: high
+    evidence_quality: medium_high
     will_i_actually_use_this: maybe
     public_ready: yes
     private_notes: no
@@ -329,14 +329,14 @@ resources:
     update_status: current
     review_status: reviewed
     lifecycle_status: shortlisted
-    maturity: mature
+    maturity: mature_project_unverified_workload
     recommendation: recommended_with_caveats
     fit_for_user: high
     time_to_value: medium
     setup_cost: high
     maintenance_burden: high
     risk_level: medium
-    evidence_quality: high
+    evidence_quality: medium_high
     will_i_actually_use_this: yes
     public_ready: yes
     private_notes: no
@@ -412,7 +412,7 @@ resources:
     setup_cost: medium
     maintenance_burden: medium_high
     risk_level: high
-    evidence_quality: high
+    evidence_quality: medium_high
     will_i_actually_use_this: maybe
     public_ready: yes
     private_notes: no

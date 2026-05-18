@@ -8,7 +8,7 @@ applies_to:
   - quick-card
   - refresh-update
   - agent-onboarding
-status: active
+status: promoted
 promoted_to:
   - AGENTS.md
   - CLAUDE.md

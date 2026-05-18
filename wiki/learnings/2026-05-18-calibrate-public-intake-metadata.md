@@ -7,7 +7,7 @@ applies_to:
   - full-analysis
   - refresh-update
   - public-redaction
-status: active
+status: promoted
 promoted_to:
   - AGENTS.md
   - docs/intake-policy.md

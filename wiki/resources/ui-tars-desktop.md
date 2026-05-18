@@ -30,7 +30,7 @@ time_to_value: medium
 setup_cost: high
 maintenance_burden: high
 risk_level: high
-evidence_quality: high
+evidence_quality: medium_high
 will_i_actually_use_this: maybe
 public_ready: yes
 private_notes: no
@@ -140,6 +140,8 @@ SDK 文档把核心抽象说得很清楚：`GUIAgent` 持有 `UITarsModel` 和 `
 
 ## How To Use It
 
+Installer/version caveat first: this intake did not verify release binaries or a Homebrew install. The GitHub release API showed `v0.3.0` without binary assets, while Homebrew listed `0.2.4`, so treat install paths as things to verify before recommending it to a beginner.
+
 作为用户试用：
 
 1. 安装 UI-TARS Desktop release 或 Homebrew cask。
@@ -230,7 +232,7 @@ Judgment axes:
 - setup cost: high
 - maintenance burden: high
 - maturity: useful but moving fast
-- evidence quality: high for source structure, medium for runtime usability because the app was not run
+- evidence quality: medium-high overall: high for source structure, medium for runtime usability because the app was not run
 - risk level: high
 
 ## When To Remember This

@@ -23,7 +23,7 @@ Use that understanding to:
 - Recognize patterns across resources and make future entries easier to recall.
 - Suggest new candidate resources when they strongly match the emerging atlas.
 - Notice when existing resources may need refresh because upstream changed, a better successor appeared, or the original judgment may be stale.
-- Keep the user in the review loop for proactive discovery: agents may propose candidates and explain why they fit, but should not silently promote discovered resources into canonical full-analysis entries without user approval unless explicitly delegated.
+- Keep the user in the review loop for proactive discovery: agents may propose candidates and explain why they fit, but should not silently write proactive discoveries into canonical quick-card or full-analysis entries without user approval unless explicitly delegated.
 
 ## Purpose
 
@@ -44,7 +44,7 @@ Do not let subagents edit repository files during intake unless explicitly assig
 Default resource intake is one resource, one branch, one worktree, one
 resource-scoped commit.
 
-When starting a new full-analysis, quick-card, or refresh branch:
+When starting a new full-analysis, user-approved quick-card, rejected/non-fit record, or refresh branch:
 
 - Start from a clean, current `main`.
 - Create a dedicated branch whose name matches the intended resource slug, such
@@ -58,11 +58,12 @@ When starting a new full-analysis, quick-card, or refresh branch:
   intake branch.
 
 For single-resource intake, the final diff should normally contain exactly one
-new `wiki/resources/{slug}.md` or `wiki/inbox/{slug}.md`, one matching
-`sources/**/{resource}/` subtree, and only the shared catalog/index/log changes
-needed for that resource. If `git diff --name-status main...HEAD` shows multiple
-new resource pages or multiple new source subtrees, stop and split the work
-before merging.
+new `wiki/resources/{slug}.md`, `wiki/inbox/{slug}.md`, `wiki/rejected/{slug}.md`,
+or `wiki/candidates/{slug}.md`; one matching `sources/**/{resource}/` subtree
+when evidence was fetched; and only the shared catalog/index/log changes needed
+for that resource. If `git diff --name-status main...HEAD` shows multiple new
+resource pages or multiple new source subtrees, stop and split the work before
+merging.
 
 When the user wants to intake multiple resources at once, use separate sibling
 worktrees/branches by default so the work can proceed independently. If a true

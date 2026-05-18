@@ -9,7 +9,7 @@ learnings:
       - full-analysis
       - refresh-update
       - resource-review
-    status: active
+    status: promoted
     promoted_to:
       - AGENTS.md
       - docs/intake-policy.md
@@ -24,7 +24,7 @@ learnings:
       - full-analysis
       - privacy-review
       - local-first-resources
-    status: active
+    status: promoted
     promoted_to:
       - AGENTS.md
     note: This prevents overstating privacy or local execution guarantees.
@@ -38,7 +38,7 @@ learnings:
       - full-analysis
       - refresh-update
       - public-redaction
-    status: active
+    status: promoted
     promoted_to:
       - AGENTS.md
       - docs/intake-policy.md
@@ -55,7 +55,7 @@ learnings:
       - quick-card
       - refresh-update
       - agent-onboarding
-    status: active
+    status: promoted
     promoted_to:
       - AGENTS.md
       - CLAUDE.md
@@ -74,7 +74,7 @@ learnings:
       - refresh-update
       - resource-review
       - interest-modeling
-    status: active
+    status: promoted
     promoted_to:
       - AGENTS.md
       - README.md
@@ -93,8 +93,25 @@ learnings:
       - refresh-update
       - branch-management
       - multi-resource-intake
-    status: active
+    status: promoted
     promoted_to:
       - AGENTS.md
       - docs/intake-policy.md
     note: This preserves review, rollback, and provenance when several resources are collected in parallel.
+  - learning_id: learn_20260518_validate_bulk_intake_drift
+    date: 2026-05-18
+    type: process
+    trigger: Post-bulk intake review found that the validator passed even though wiki index entries, data/frontmatter fields, source metadata, and learning statuses had drifted.
+    root_cause: The initial validator checked only a narrow subset of resource fields and did not validate front-door indexes, source metadata/manifests, learning page status, or branch-scope policy.
+    future_rule: After batch or multi-branch intake, validate canonical data against page frontmatter, front-door indexes, source metadata/manifests, learning pages, and branch scope before merging or pushing.
+    applies_to:
+      - full-analysis
+      - quick-card
+      - multi-resource-intake
+      - branch-management
+      - validation
+    status: promoted
+    promoted_to:
+      - scripts/validate-atlas.rb
+      - docs/intake-policy.md
+    note: This turns reviewer-caught drift into automated validation coverage.

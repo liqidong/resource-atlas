@@ -4,6 +4,7 @@ resource_id: res_20260518_yao_open_prompts_fd1fdf0
 slug: yao-open-prompts
 canonical_slug: yao-open-prompts
 aliases:
+  - yao-open-prompts
   - Yao Open Prompts
   - 姚金刚提示词合集开源版
 resource_type: github_repo

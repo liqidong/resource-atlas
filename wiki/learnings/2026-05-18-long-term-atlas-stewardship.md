@@ -9,7 +9,7 @@ applies_to:
   - refresh-update
   - resource-review
   - interest-modeling
-status: active
+status: promoted
 promoted_to:
   - AGENTS.md
   - README.md
