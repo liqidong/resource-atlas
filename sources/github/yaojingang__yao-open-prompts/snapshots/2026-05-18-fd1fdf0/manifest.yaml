@@ -1,0 +1,48 @@
+source: https://github.com/yaojingang/yao-open-prompts
+fetched_at: 2026-05-18
+source_ref: fd1fdf0fa49ee4bf4aedb44842377db57240030c
+commit_date: 2026-05-17 20:11:12 +0800
+commit_subject: Update knowledge infographic prompt
+content_hash: 417f0fd54c205d84992a229514f4b1857799a431bda7c8f3e11efb2847afd7f2
+fetch_method: git clone --depth=1
+files_in_upstream_clone: 267
+prompt_files:
+  chinese: 117
+  english: 117
+markdown_total_lines: 42136
+github_api:
+  observed_at: 2026-05-18
+  created_at: 2026-05-06T13:04:20Z
+  pushed_at: 2026-05-17T12:11:17Z
+  stars: 2132
+  forks: 328
+  open_issues: 0
+  has_pages: true
+  homepage: https://yaojingang.github.io/yao-open-prompts/
+  license_spdx: NOASSERTION
+  topics:
+    - ai
+    - chinese-prompts
+    - geo
+    - prompt-engineering
+    - prompts
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - generated docs HTML
+  - prompt markdown files
+  - git metadata
+exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, and evidence summary instead of vendoring the full prompt library.
+validation:
+  command: python3 scripts/check_repo.py
+  output: Checked 234 prompt files. OK
+metadata_findings:
+  missing_created_field:
+    chinese_prompt_files: 24
+    english_prompt_files: 24
+  note: scripts/check_repo.py does not require created, even though README says prompt files include it.
+license: CC BY 4.0 for prompt text
+sensitivity: public
+publishable: partial
+notes: Full source was reviewed from a temporary clone at /tmp/yao-open-prompts-intake and not committed into this repository.

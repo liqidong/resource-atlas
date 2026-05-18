@@ -1,0 +1,30 @@
+learnings:
+  - learning_id: learn_20260518_multi_agent_intake_default
+    date: 2026-05-18
+    type: preference
+    trigger: User asked that future intake should use multi-agent high-quality review.
+    root_cause: Single-pass intake can miss source facts, value judgment issues, update risks, and public-readiness concerns.
+    future_rule: Future full-analysis intake should use at least a source/structure reviewer and a value/use-case reviewer when tools allow it.
+    applies_to:
+      - full-analysis
+      - refresh-update
+      - resource-review
+    status: active
+    promoted_to:
+      - AGENTS.md
+      - docs/intake-policy.md
+    note: This is a user-stated workflow preference, not merely an inferred process improvement.
+  - learning_id: learn_20260518_verify_local_claims_network_boundary
+    date: 2026-05-18
+    type: quality_bar
+    trigger: Local Deep Researcher is described as fully local, but source review showed search and optional full-page fetch can still use external network services.
+    root_cause: Local/private claims often apply to one subsystem, such as the LLM, not the entire workflow.
+    future_rule: For resources claiming local, private, offline, or self-hosted behavior, verify every network boundary before writing the verdict.
+    applies_to:
+      - full-analysis
+      - privacy-review
+      - local-first-resources
+    status: active
+    promoted_to:
+      - AGENTS.md
+    note: This prevents overstating privacy or local execution guarantees.

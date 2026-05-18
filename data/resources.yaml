@@ -1,0 +1,143 @@
+resources:
+  - resource_id: res_20260518_yao_open_prompts_fd1fdf0
+    canonical_slug: yao-open-prompts
+    aliases:
+      - yao-open-prompts
+      - Yao Open Prompts
+      - 姚金刚提示词合集开源版
+    title: Yao Open Prompts
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/yaojingang/yao-open-prompts
+    canonical_source: https://github.com/yaojingang/yao-open-prompts
+    local_source: sources/github/yaojingang__yao-open-prompts/
+    source_fingerprints:
+      - git:fd1fdf0fa49ee4bf4aedb44842377db57240030c
+      - tree-content-sha256:417f0fd54c205d84992a229514f4b1857799a431bda7c8f3e11efb2847afd7f2
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: fd1fdf0fa49ee4bf4aedb44842377db57240030c
+    upstream_ref: fd1fdf0fa49ee4bf4aedb44842377db57240030c
+    upstream_version: main@fd1fdf0
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: useful
+    recommendation: recommended
+    fit_for_user: high
+    time_to_value: low
+    setup_cost: low
+    maintenance_burden: low
+    risk_level: medium
+    evidence_quality: high
+    will_i_actually_use_this: yes
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: zh
+    redaction_needed: no
+    tags:
+      - prompt-library
+      - chinese-ai-prompts
+      - prompt-engineering
+      - content-creation
+      - geo-marketing
+      - bilingual-prompts
+      - resource-library
+    use_cases:
+      - find-practical-ai-prompts
+      - study-prompt-library-maintenance
+      - build-prompt-resource-library
+    recommended_for:
+      - 快速查找中文实战提示词
+      - 学习如何维护结构化提示词库
+      - 参考提示词分类、frontmatter、目录生成和质量检查流程
+    not_recommended_for:
+      - 需要可直接安装运行的软件工具
+      - 需要严肃评测结果或模型效果基准
+      - 想找英文优先的 prompt engineering 教程
+    confidence: high
+    community_signal:
+      observed_at: 2026-05-18
+      stars: 2132
+      forks: 328
+      open_issues: 0
+      github_pages: true
+      homepage: https://yaojingang.github.io/yao-open-prompts/
+      github_license_spdx: NOASSERTION
+      local_license_file: CC BY 4.0
+  - resource_id: res_20260518_local_deep_researcher_e172109
+    canonical_slug: local-deep-researcher
+    aliases:
+      - local-deep-researcher
+      - Local Deep Researcher
+      - ollama-deep-researcher
+    title: Local Deep Researcher
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/langchain-ai/local-deep-researcher
+    canonical_source: https://github.com/langchain-ai/local-deep-researcher
+    local_source: sources/github/langchain-ai__local-deep-researcher/
+    source_fingerprints:
+      - git:e1721099870bb6169a8b30d11a43e1dd7a7853ab
+      - tree-content-sha256:d146229276e6a2a983d1248f36ff59352df87d61d2562092dddb8759c8bee0f5
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: e1721099870bb6169a8b30d11a43e1dd7a7853ab
+    upstream_ref: e1721099870bb6169a8b30d11a43e1dd7a7853ab
+    upstream_version: main@e172109
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: useful
+    recommendation: recommended
+    fit_for_user: high
+    time_to_value: medium
+    setup_cost: medium
+    maintenance_burden: high
+    risk_level: medium
+    evidence_quality: high
+    will_i_actually_use_this: maybe
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: en
+    redaction_needed: no
+    tags:
+      - local-llm
+      - ollama
+      - lmstudio
+      - langgraph
+      - langchain
+      - deep-research
+      - research-agent
+      - web-search
+      - iterative-retrieval
+      - local-first
+      - open-source-template
+      - citation-workflow
+    use_cases:
+      - learn-langgraph-research-agent
+      - build-local-deep-research-prototype
+      - compare-deep-research-tools
+    recommended_for:
+      - 学习 LangGraph 如何表达带循环的研究流程
+      - 用 Ollama 或 LM Studio 搭本地优先 deep research 原型
+      - 参考 query generation、search、summarize、reflect、follow-up query 的最小实现
+    not_recommended_for:
+      - 完全非技术用户的一键研究产品
+      - 需要高可靠引用核验和 benchmark 的生产研究工作流
+      - 需要登录网页、动态浏览器操作、私有站点读取或本地文件 RAG 的研究助手
+    confidence: high
+    community_signal:
+      observed_at: 2026-05-18
+      stars: 9177
+      forks: 954
+      open_issues_plus_prs: 42
+      commit_count: 146
+      github_pages: false
+      homepage:
+      github_license_spdx: MIT
+      local_license_file: MIT

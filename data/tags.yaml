@@ -1,0 +1,58 @@
+tags:
+  prompt-library:
+    aliases: [prompt-collection, prompts]
+    description: Collections of reusable prompts.
+  chinese-ai-prompts:
+    aliases: [中文提示词]
+    description: Chinese-first prompt resources.
+  prompt-engineering:
+    aliases: [prompt-design]
+    description: Resources about designing prompts and prompt workflows.
+  content-creation:
+    aliases: [ai-content]
+    description: Content writing, social media, article, image, and video prompt resources.
+  geo-marketing:
+    aliases: [generative-engine-optimization, ai-search-marketing]
+    description: AI search and GEO marketing resources.
+  bilingual-prompts:
+    aliases: [zh-en-prompts]
+    description: Prompt resources with Chinese and English versions.
+  resource-library:
+    aliases: [knowledge-base]
+    description: Repositories that are useful as examples of resource library structure.
+  local-llm:
+    aliases: [local-model]
+    description: Resources centered on local model runtimes.
+  ollama:
+    aliases: []
+    description: Resources using Ollama for local model hosting.
+  lmstudio:
+    aliases: [lm-studio]
+    description: Resources using LM Studio or OpenAI-compatible local model servers.
+  langgraph:
+    aliases: []
+    description: Resources using LangGraph state graphs, nodes, and edges.
+  langchain:
+    aliases: []
+    description: Resources built on LangChain ecosystem packages.
+  deep-research:
+    aliases: [deep-research-agent]
+    description: Resources for multi-step research, search, summarization, and report writing.
+  research-agent:
+    aliases: [research-assistant]
+    description: Agentic workflows for researching topics and producing summaries or reports.
+  web-search:
+    aliases: [search-api]
+    description: Resources that call search engines or search APIs.
+  iterative-retrieval:
+    aliases: [reflection-loop]
+    description: Query, retrieve, summarize, reflect, and search again patterns.
+  local-first:
+    aliases: [self-hosted]
+    description: Resources designed to keep important compute local, while possibly still using network services.
+  open-source-template:
+    aliases: [starter-template]
+    description: Repositories valuable as implementation templates.
+  citation-workflow:
+    aliases: [source-citations]
+    description: Workflows that track sources used in generated reports.

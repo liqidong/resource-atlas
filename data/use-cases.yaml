@@ -1,0 +1,31 @@
+use_cases:
+  find-practical-ai-prompts:
+    title: Find practical AI prompts
+    description: Find ready-to-copy prompts for work, content, marketing, learning, and everyday AI tasks.
+    resources:
+      - res_20260518_yao_open_prompts_fd1fdf0
+  study-prompt-library-maintenance:
+    title: Study prompt library maintenance
+    description: Learn how a prompt library can use templates, frontmatter, catalog generation, checks, and release rules.
+    resources:
+      - res_20260518_yao_open_prompts_fd1fdf0
+  build-prompt-resource-library:
+    title: Build a prompt resource library
+    description: Use existing prompt repositories as references for organizing and publishing a durable prompt collection.
+    resources:
+      - res_20260518_yao_open_prompts_fd1fdf0
+  learn-langgraph-research-agent:
+    title: Learn LangGraph research agent architecture
+    description: Study how a research assistant can be expressed as a LangGraph loop with query generation, web search, summarization, reflection, and final reporting.
+    resources:
+      - res_20260518_local_deep_researcher_e172109
+  build-local-deep-research-prototype:
+    title: Build a local deep research prototype
+    description: Prototype a local-LLM-first research assistant using Ollama or LM Studio plus configurable web search backends.
+    resources:
+      - res_20260518_local_deep_researcher_e172109
+  compare-deep-research-tools:
+    title: Compare deep research tools
+    description: Compare open source, local-first, API-backed, and hosted deep research systems by setup cost, source quality, privacy boundary, and reliability.
+    resources:
+      - res_20260518_local_deep_researcher_e172109

@@ -1,0 +1,17 @@
+source_url: https://github.com/yaojingang/yao-open-prompts
+source_kind: github
+owner: yaojingang
+repo: yao-open-prompts
+default_branch: main
+reviewed_ref: fd1fdf0fa49ee4bf4aedb44842377db57240030c
+reviewed_at: 2026-05-18
+license: CC BY 4.0 for prompt text; scripts may use separate MIT if added upstream
+github_license_spdx: NOASSERTION
+github_api_observed_at: 2026-05-18
+github_stars: 2132
+github_forks: 328
+github_open_issues: 0
+github_pages: true
+homepage: https://yaojingang.github.io/yao-open-prompts/
+resource_id: res_20260518_yao_open_prompts_fd1fdf0
+snapshot: snapshots/2026-05-18-fd1fdf0/

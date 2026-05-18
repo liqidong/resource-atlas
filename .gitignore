@@ -1,0 +1,19 @@
+.DS_Store
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor and OS state
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Runtime/cache output
+.cache/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.log

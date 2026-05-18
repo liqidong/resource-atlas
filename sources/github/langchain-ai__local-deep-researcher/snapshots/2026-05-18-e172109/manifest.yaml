@@ -1,0 +1,35 @@
+source: https://github.com/langchain-ai/local-deep-researcher
+fetched_at: 2026-05-18
+source_ref: e1721099870bb6169a8b30d11a43e1dd7a7853ab
+commit_date: 2026-04-20 23:35:08 -0700
+commit_subject: Merge pull request #128 from langchain-ai/dependabot/uv/uv-b3f7a89bd4
+content_hash: d146229276e6a2a983d1248f36ff59352df87d61d2562092dddb8759c8bee0f5
+fetch_method: git clone --depth=1
+files_in_upstream_clone: 18
+python_files: 7
+markdown_files: 1
+github_api:
+  observed_at: 2026-05-18
+  created_at: 2024-12-04T23:57:20Z
+  pushed_at: 2026-04-21T22:54:09Z
+  stars: 9177
+  forks: 954
+  open_issues_plus_prs: 42
+  commit_count: 146
+  has_pages: false
+  homepage:
+  license_spdx: MIT
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - uv.lock
+  - git metadata
+exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, validation result, and evidence summary instead of vendoring the full implementation.
+validation:
+  command: python3 -m py_compile /tmp/local-deep-researcher-intake/src/ollama_deep_researcher/*.py
+  output: py_compile OK
+license: MIT
+sensitivity: public
+publishable: partial
+notes: Full source was reviewed from a temporary clone at /tmp/local-deep-researcher-intake and not committed into this repository.

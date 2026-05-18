@@ -1,0 +1,17 @@
+source_url: https://github.com/langchain-ai/local-deep-researcher
+source_kind: github
+owner: langchain-ai
+repo: local-deep-researcher
+default_branch: main
+reviewed_ref: e1721099870bb6169a8b30d11a43e1dd7a7853ab
+reviewed_at: 2026-05-18
+license: MIT
+github_license_spdx: MIT
+github_api_observed_at: 2026-05-18
+github_stars: 9177
+github_forks: 954
+github_open_issues_plus_prs: 42
+github_pages: false
+homepage:
+resource_id: res_20260518_local_deep_researcher_e172109
+snapshot: snapshots/2026-05-18-e172109/
