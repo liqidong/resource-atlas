@@ -81,3 +81,20 @@ learnings:
       - docs/stewardship-vision.md
       - docs/update-policy.md
     note: This records the phase change from command-following intake to long-term agent stewardship.
+  - learning_id: learn_20260518_one_resource_worktree_intake
+    date: 2026-05-18
+    type: process
+    trigger: Review found that several resource intakes were created as named branches but the final work was bundled into one single-resource branch commit.
+    root_cause: Branch switching inside one working directory allowed uncommitted intake work to drift across branch names, so branch names no longer represented isolated resource scopes.
+    future_rule: Default intake isolation is one resource, one branch, one git worktree, and one resource-scoped commit. Multiple resources should use sibling worktrees or explicit batch mode with one commit per resource.
+    applies_to:
+      - full-analysis
+      - quick-card
+      - refresh-update
+      - branch-management
+      - multi-resource-intake
+    status: active
+    promoted_to:
+      - AGENTS.md
+      - docs/intake-policy.md
+    note: This preserves review, rollback, and provenance when several resources are collected in parallel.

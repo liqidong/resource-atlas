@@ -39,6 +39,37 @@ For future resource intake, use multi-agent review by default when tools allow i
 
 Do not let subagents edit repository files during intake unless explicitly assigned. The integrator owns final writes.
 
+## Branch And Worktree Discipline
+
+Default resource intake is one resource, one branch, one worktree, one
+resource-scoped commit.
+
+When starting a new full-analysis, quick-card, or refresh branch:
+
+- Start from a clean, current `main`.
+- Create a dedicated branch whose name matches the intended resource slug, such
+  as `codex/mineru`.
+- Prefer a dedicated `git worktree` for that branch instead of switching several
+  intake branches inside one working directory.
+- Do not perform resource intake directly on `main`.
+- Before writing, verify the branch has no inherited resource work:
+  `git status --short --branch` should be clean, and
+  `git diff --name-status main...HEAD` should be empty for a newly created
+  intake branch.
+
+For single-resource intake, the final diff should normally contain exactly one
+new `wiki/resources/{slug}.md` or `wiki/inbox/{slug}.md`, one matching
+`sources/**/{resource}/` subtree, and only the shared catalog/index/log changes
+needed for that resource. If `git diff --name-status main...HEAD` shows multiple
+new resource pages or multiple new source subtrees, stop and split the work
+before merging.
+
+When the user wants to intake multiple resources at once, use separate sibling
+worktrees/branches by default so the work can proceed independently. If a true
+batch is explicitly requested, name it as a batch branch, keep one commit per
+resource, and add a separate integration commit only for cross-resource links or
+shared cleanup. Do not use a single-resource branch name for a batch diff.
+
 ## Source Of Truth
 
 - `data/resources.yaml` is canonical for resource identity and machine-readable fields.
