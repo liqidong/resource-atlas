@@ -44,3 +44,21 @@ learnings:
       - docs/intake-policy.md
       - docs/public-redaction-policy.md
     note: This keeps future entries more useful for automated lookup and safer to publish.
+  - learning_id: learn_20260518_agent_stewardship_contract
+    date: 2026-05-18
+    type: preference
+    trigger: User clarified that every future agent should enter Resource Atlas as the repository manager and should not require the user to restate standard intake responsibilities.
+    root_cause: The repository had intake rules, but not a strong role definition saying that agents own the default management workflow when a new resource is dropped in.
+    future_rule: "Agents entering Resource Atlas must treat themselves as stewards: infer the intake mode, gather evidence, update canonical files, run validation, and only ask when a missing decision is unsafe to infer."
+    applies_to:
+      - full-analysis
+      - quick-card
+      - refresh-update
+      - agent-onboarding
+    status: active
+    promoted_to:
+      - AGENTS.md
+      - CLAUDE.md
+      - docs/intake-policy.md
+      - scripts/validate-atlas.rb
+    note: This turns the repository from user-driven note taking into agent-managed resource stewardship.

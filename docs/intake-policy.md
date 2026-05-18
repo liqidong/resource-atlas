@@ -2,6 +2,12 @@
 
 Resource Atlas has three intake modes.
 
+## Default Agent Posture
+
+Agents are expected to manage intake, not merely transcribe user instructions. If the user drops a new article, link, repository, paper, or rough note into the repository context, infer the intended resource workflow and proceed with the smallest safe intake mode.
+
+Ask a question only when the missing answer would materially change the resource identity, privacy/publication status, or recommendation. Otherwise, act as the integrator: gather evidence, write/update the canonical files, and verify the result.
+
 ## Quick Card
 
 Use when a resource is interesting but not yet worth full analysis.
@@ -31,6 +37,7 @@ Default workflow:
 7. Update README only when the resource is shortlisted, recommended, or important to watch.
 8. Append `wiki/log.md`.
 9. Check whether the intake revealed a reusable process lesson. If yes, update `data/learnings.yaml` and `wiki/learnings/`.
+10. Run `ruby scripts/validate-atlas.rb` before claiming completion. If the script is unavailable, manually verify YAML parsing, data/page consistency, local links, required sections, public path hygiene, and source references.
 
 ## Field Calibration
 
