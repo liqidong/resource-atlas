@@ -52,6 +52,7 @@ end
 
 yaml_paths = %w[
   data/resources.yaml
+  data/relationships.yaml
   data/use-cases.yaml
   data/tags.yaml
   data/learnings.yaml
@@ -82,6 +83,13 @@ required_page_headings = [
   "## Source Evidence",
   "## Evidence Standard",
   "## Update History"
+]
+
+required_quick_card_headings = [
+  "## Quick Verdict",
+  "## When To Remember This",
+  "## Evidence Peek",
+  "## Next Review Trigger"
 ]
 
 frontmatter_fields_to_match = %w[
@@ -141,14 +149,64 @@ required_manifest_fields = %w[
 resources.each do |resource|
   slug = resource["canonical_slug"]
   resource_id = resource["resource_id"] || "(missing resource_id)"
-  page_path = File.join(ROOT, "wiki/resources/#{slug}.md")
-  source_path = File.join(ROOT, resource["local_source"].to_s)
-  metadata_path = File.join(source_path, "metadata.yaml")
+  lifecycle_status = resource["lifecycle_status"].to_s
 
   unless slug && !slug.empty?
     ERRORS << "#{resource_id}: missing canonical_slug"
     next
   end
+
+  if lifecycle_status == "quick_note"
+    page_path = File.join(ROOT, "wiki/inbox/#{slug}.md")
+    unless File.exist?(page_path)
+      ERRORS << "#{resource_id}: missing quick card wiki/inbox/#{slug}.md"
+      next
+    end
+
+    page_text = read(page_path)
+    frontmatter = resource_frontmatter(page_path)
+    page_slug = frontmatter["canonical_slug"] || frontmatter["slug"]
+
+    if page_slug.to_s != slug.to_s
+      ERRORS << "#{rel(page_path)}: slug mismatch canonical_slug=#{slug.inspect} page=#{page_slug.inspect}"
+    end
+
+    required_quick_card_headings.each do |heading|
+      ERRORS << "#{rel(page_path)}: missing required heading #{heading}" unless page_text.include?(heading)
+    end
+
+    %w[title resource_id canonical_slug resource_type source_kind source_url date_added lifecycle_status recommendation].each do |field|
+      next if resource[field].nil? && frontmatter[field].nil?
+
+      if resource[field].to_s != frontmatter[field].to_s
+        ERRORS << "#{rel(page_path)}: #{field} mismatch data=#{resource[field].inspect} page=#{frontmatter[field].inspect}"
+      end
+    end
+
+    %w[tags use_cases].each do |field|
+      next if resource[field].nil? && frontmatter[field].nil?
+
+      data_value = Array(resource[field]).map(&:to_s)
+      page_value = Array(frontmatter[field]).map(&:to_s)
+      if data_value != page_value
+        ERRORS << "#{rel(page_path)}: #{field} mismatch data=#{data_value.inspect} page=#{page_value.inspect}"
+      end
+    end
+
+    Array(resource["tags"]).each do |tag|
+      ERRORS << "#{resource_id}: unknown tag #{tag}" unless tags.key?(tag)
+    end
+
+    Array(resource["use_cases"]).each do |use_case|
+      ERRORS << "#{resource_id}: unknown use_case #{use_case}" unless use_cases.key?(use_case)
+    end
+
+    next
+  end
+
+  page_path = File.join(ROOT, "wiki/resources/#{slug}.md")
+  source_path = File.join(ROOT, resource["local_source"].to_s)
+  metadata_path = File.join(source_path, "metadata.yaml")
 
   unless File.exist?(page_path)
     ERRORS << "#{resource_id}: missing page wiki/resources/#{slug}.md"
@@ -315,6 +373,19 @@ public_files.each do |path|
 end
 
 current_branch = git_lines("branch", "--show-current").first
+if current_branch == "main"
+  origin_main = git_lines("rev-parse", "--verify", "origin/main").first
+  if origin_main
+    counts = git_lines("rev-list", "--left-right", "--count", "HEAD...origin/main").first
+    if counts
+      _ahead, behind = counts.split(/\s+/, 2).map(&:to_i)
+      if behind.positive?
+        ERRORS << "branch main is behind origin/main by #{behind} commit(s); sync before claiming completion"
+      end
+    end
+  end
+end
+
 if current_branch && current_branch != "main"
   diff_lines = git_lines("diff", "--name-status", "main...HEAD")
   changed_paths = diff_lines.filter_map do |line|

@@ -8,6 +8,16 @@ Agents are expected to manage intake, not merely transcribe user instructions. I
 
 Ask a question only when the missing answer would materially change the resource identity, privacy/publication status, or recommendation. Otherwise, act as the integrator: gather evidence, write/update the canonical files, and verify the result.
 
+## Mode Triage
+
+Use the smallest mode that preserves future recall:
+
+- **Full analysis** when the user asks to add a resource to the library, the item is clearly high-value, or the judgment will drive future use.
+- **Quick card** when a user-provided or user-approved item is interesting but evidence is thin or the value is not yet worth full analysis.
+- **Refresh/update** when the URL, slug, alias, or `resource_id` matches an existing entry and the source or judgment may have changed.
+- **Rejected/non-fit** when a reviewed item is not worth intake but should be remembered to avoid future re-suggestion.
+- **Candidate note** only for proactive discoveries that the user has not approved for canonical intake.
+
 ## Branch And Worktree Gate
 
 Default intake isolation is:
@@ -47,6 +57,21 @@ worktrees/branches by default. Only use a batch branch when batch mode is
 explicitly requested; in batch mode, keep one commit per resource and reserve a
 separate integration commit for cross-resource links or shared cleanup.
 
+## Submission Completion Gate
+
+For submit, commit, push, or "finish this intake" requests, completion requires a
+visibility check across the local checkout and upstream:
+
+1. Run `ruby scripts/validate-atlas.rb`.
+2. Confirm the expected commit is reachable from the target upstream branch,
+   such as `origin/main`, and report the SHA in the handoff.
+3. Confirm discoverable resources appear in `README.md`, `wiki/index.md`, and
+   `wiki/log.md` when the policy says those front doors should be updated.
+4. Check `git status --short --branch`. If the current `main` is behind
+   `origin/main`, fast-forward with autostash when safe. If local WIP or risk
+   prevents syncing, say plainly that the remote is updated but this window is
+   not synced yet.
+
 ## Quick Card
 
 Use when a user-provided or user-approved resource is interesting but not yet worth full analysis.
@@ -55,6 +80,8 @@ Required writes:
 
 - `wiki/inbox/{slug}.md`
 - `data/resources.yaml` entry with `lifecycle_status: quick_note`
+
+The quick-card data entry should still include at least `resource_id`, `canonical_slug`, `title`, `resource_type`, `source_kind` when known, `source_url`, `lifecycle_status`, `recommendation`, `tags`, and `use_cases`. A source snapshot manifest is optional for quick cards unless evidence is retained beyond the inbox note.
 
 Do not update README unless the resource is immediately important.
 
@@ -91,6 +118,7 @@ Default workflow:
    - source/structure reviewer
    - value/use-case reviewer
    - integrator
+   If subagent tooling is unavailable, the integrator should run the source/structure and value/use-case passes sequentially and note that fallback in the resource page.
 3. Capture source evidence under `sources/`.
 4. Write `wiki/resources/{slug}.md`.
 5. Update `data/resources.yaml`.
@@ -113,18 +141,11 @@ After batch intake or multi-branch integration, do not only check that YAML pars
 
 ## Refresh / Update
 
-Use when an already analyzed resource may have changed.
-
-Rules:
-
-- `last_checked` means the source was checked.
-- `last_reviewed` means the judgment was reviewed.
-- If upstream changed, preserve old judgment in `Update History`.
-- If the recommendation changes, update README and use-case pages.
+Use when an already analyzed resource may have changed. Follow `docs/update-policy.md`; preserve judgment history, distinguish `last_checked` from `last_reviewed`, and update README/use-case pages only when recommendation or discoverability changes.
 
 ## Self-Improvement Check
 
-Before finishing a full analysis or refresh, ask:
+Before finishing a full analysis, refresh, or rule change, apply `docs/self-improvement-policy.md`. At minimum ask:
 
 - Did the user correct the process?
 - Did multi-agent review catch a repeatable issue?

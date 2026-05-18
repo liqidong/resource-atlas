@@ -115,3 +115,22 @@ learnings:
       - scripts/validate-atlas.rb
       - docs/intake-policy.md
     note: This turns reviewer-caught drift into automated validation coverage.
+  - learning_id: learn_20260518_cross_window_submission_completion
+    date: 2026-05-18
+    type: process
+    trigger: User found that a resource submitted from another window was present on origin/main but not visible in the current window's README.
+    root_cause: Submission was treated as complete after the remote commit landed, but the current workspace remained behind origin/main with local WIP, so the front-door check in this window saw stale files.
+    future_rule: A submit or finish request is complete only after validating the atlas, confirming the upstream commit SHA, checking README/wiki front-door visibility when applicable, and syncing or explicitly reporting any current-window divergence from origin/main.
+    applies_to:
+      - full-analysis
+      - quick-card
+      - refresh-update
+      - branch-management
+      - submission
+      - validation
+    status: promoted
+    promoted_to:
+      - AGENTS.md
+      - docs/intake-policy.md
+      - scripts/validate-atlas.rb
+    note: This prevents cross-window completion reports from hiding that the user's visible checkout is stale.

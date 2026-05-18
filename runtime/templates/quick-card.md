@@ -2,7 +2,9 @@
 title:
 resource_id:
 slug:
+canonical_slug:
 resource_type:
+source_kind:
 source_url:
 date_added:
 lifecycle_status: quick_note

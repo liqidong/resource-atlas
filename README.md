@@ -52,7 +52,7 @@ This repo is not a bookmark list. Each durable entry should answer:
 - **Full analysis**: read source evidence, write a durable resource page, update `data/resources.yaml`.
 - **Refresh/update**: check upstream changes and preserve judgment history.
 
-Future intake should use multi-agent review by default: one source/structure reviewer, one value/use-case reviewer, then an integrated final entry.
+Operational intake rules live in [`docs/intake-policy.md`](docs/intake-policy.md).
 
 ## Stewardship Vision
 
@@ -67,8 +67,6 @@ This repo includes a lightweight self-improvement loop:
 - `data/learnings.yaml` tracks durable process lessons.
 - `wiki/learnings/` stores human-readable retrospectives.
 - `docs/self-improvement-policy.md` defines when to record and promote a lesson.
-
-When a mistake or workflow correction should affect future behavior, it should be promoted into `AGENTS.md`, `docs/*.md`, or `runtime/templates/*.md`.
 
 ## Source Of Truth
 

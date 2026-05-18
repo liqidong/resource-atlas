@@ -8,7 +8,7 @@ Default responsibilities:
 
 - Read this file, `README.md`, and the relevant policy/template files before changing intake data.
 - Decide whether the new item is a quick card, full analysis, refresh, or rejected/non-fit resource.
-- Preserve the source of truth: update `data/resources.yaml` for identity and machine-readable fields, `wiki/resources/*.md` or `wiki/inbox/*.md` for readable analysis, and `sources/**/manifest.yaml` for evidence provenance.
+- Preserve the source of truth: update `data/resources.yaml` for identity and machine-readable fields, `wiki/resources/*.md` or `wiki/inbox/*.md` for readable analysis, and source manifests for full analyses, refreshes, or retained evidence snapshots.
 - Do not ask the user to restate the standard intake process. Ask only for the single missing decision that cannot be inferred safely.
 - If the user provides a raw article or link, fetch/read the source, judge value and fit, record evidence reviewed and not reviewed, and verify consistency before claiming completion.
 - Run `ruby scripts/validate-atlas.rb` before finishing any intake, refresh, or rule change. If the validator cannot run, say why and manually cover the same checks.
@@ -37,45 +37,39 @@ For future resource intake, use multi-agent review by default when tools allow i
 2. **Value/use-case reviewer**: judges beginner value, personal fit, use cases, and risks.
 3. **Integrator**: writes the final resource page, updates data files, and verifies consistency.
 
-Do not let subagents edit repository files during intake unless explicitly assigned. The integrator owns final writes.
+If subagent tooling is unavailable, run those two review passes sequentially and record the fallback. Do not let subagents edit repository files during intake unless explicitly assigned. The integrator owns final writes.
 
 ## Branch And Worktree Discipline
 
 Default resource intake is one resource, one branch, one worktree, one
 resource-scoped commit.
 
-When starting a new full-analysis, user-approved quick-card, rejected/non-fit record, or refresh branch:
+For the concrete gate, commands, and batch rules, follow `docs/intake-policy.md`.
+In short: start from clean `main`, create a slug-matched `codex/{slug}` branch
+in a dedicated worktree, keep a single-resource diff scoped to that resource,
+and split the work if a non-batch branch accumulates multiple intake pages or
+source roots.
 
-- Start from a clean, current `main`.
-- Create a dedicated branch whose name matches the intended resource slug, such
-  as `codex/mineru`.
-- Prefer a dedicated `git worktree` for that branch instead of switching several
-  intake branches inside one working directory.
-- Do not perform resource intake directly on `main`.
-- Before writing, verify the branch has no inherited resource work:
-  `git status --short --branch` should be clean, and
-  `git diff --name-status main...HEAD` should be empty for a newly created
-  intake branch.
+## Submission Completion Contract
 
-For single-resource intake, the final diff should normally contain exactly one
-new `wiki/resources/{slug}.md`, `wiki/inbox/{slug}.md`, `wiki/rejected/{slug}.md`,
-or `wiki/candidates/{slug}.md`; one matching `sources/**/{resource}/` subtree
-when evidence was fetched; and only the shared catalog/index/log changes needed
-for that resource. If `git diff --name-status main...HEAD` shows multiple new
-resource pages or multiple new source subtrees, stop and split the work before
-merging.
+When the user asks an agent to submit, commit, push, or finish an intake, "done"
+means the submitted state is visible from the repository front door, not merely
+written in one window. Before claiming completion:
 
-When the user wants to intake multiple resources at once, use separate sibling
-worktrees/branches by default so the work can proceed independently. If a true
-batch is explicitly requested, name it as a batch branch, keep one commit per
-resource, and add a separate integration commit only for cross-resource links or
-shared cleanup. Do not use a single-resource branch name for a batch diff.
+- Verify `ruby scripts/validate-atlas.rb` passes.
+- Verify the submitted commit is on the expected upstream branch and report the
+  commit SHA.
+- Verify `README.md`, `wiki/index.md`, and `wiki/log.md` show the resource when
+  the resource is shortlisted, recommended, or otherwise meant to be discoverable.
+- If working on `main`, make sure it is not behind `origin/main`; fast-forward
+  with autostash when safe, or clearly report that the remote is updated but the
+  current workspace is not yet synced.
 
 ## Source Of Truth
 
 - `data/resources.yaml` is canonical for resource identity and machine-readable fields.
-- `wiki/resources/*.md` is the readable analysis.
-- `sources/**/manifest.yaml` records evidence provenance.
+- `wiki/resources/*.md` is the readable analysis; `wiki/inbox/*.md` is the canonical quick-card queue.
+- `sources/**/manifest.yaml` records retained evidence provenance.
 - `README.md` is a curated front door, not the database.
 
 ## Source Retention
@@ -103,10 +97,4 @@ Before marking an entry public-ready, calibrate machine-readable fields against 
 
 If the user corrects the workflow, a reviewer catches a repeatable issue, or verification exposes a reusable process problem, add a learning.
 
-Use:
-
-- `data/learnings.yaml` for the machine-readable entry.
-- `wiki/learnings/*.md` for the human-readable retrospective.
-- `docs/self-improvement-policy.md` for rules.
-
-A learning is only useful if it changes future behavior. When a lesson should affect future intake, promote it into `AGENTS.md`, `docs/*.md`, or `runtime/templates/*.md`.
+Use `docs/self-improvement-policy.md`: record durable lessons in `data/learnings.yaml` and `wiki/learnings/*.md`, then promote behavior-changing rules into `AGENTS.md`, `docs/*.md`, or `runtime/templates/*.md`.
