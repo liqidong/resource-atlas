@@ -543,3 +543,89 @@ resources:
         - "1.0"
       primary_language: HTML
       github_api_status: unauthenticated_rate_limited
+  - resource_id: res_20260518_cli_anything_a32f11f
+    canonical_slug: cli-anything
+    aliases:
+      - CLI-Anything
+      - HKUDS/CLI-Anything
+      - CLI-Hub
+      - cli-anything-hub
+    title: CLI-Anything
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/HKUDS/CLI-Anything
+    canonical_source: https://github.com/HKUDS/CLI-Anything
+    local_source: sources/github/HKUDS__CLI-Anything/
+    source_fingerprints:
+      - git:a32f11fc67052ff233dfaa5106de5bb1ccdf24ec
+      - tree-content-sha256:8bdc773e140b3cbf323de096cbbcb6d6dd6ff037d64da13df596660161aebcc7
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: a32f11fc67052ff233dfaa5106de5bb1ccdf24ec
+    upstream_ref: a32f11fc67052ff233dfaa5106de5bb1ccdf24ec
+    upstream_version: main@a32f11f / cli-hub v0.3.0
+    latest_release: v0.3.0
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: experimental_useful_fast_moving
+    recommendation: recommended_with_caveats
+    fit_for_user: high
+    time_to_value: medium
+    setup_cost: high
+    maintenance_burden: high
+    risk_level: high
+    evidence_quality: medium_high
+    will_i_actually_use_this: yes
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: multilingual
+    redaction_needed: no
+    tags:
+      - agent-skills
+      - coding-agent
+      - claude-code
+      - codex-cli
+      - agent-native-cli
+      - cli-generation
+      - cli-hub
+      - software-automation
+      - desktop-automation
+      - browser-agent
+      - agent-tooling
+      - open-source-template
+    use_cases:
+      - build-agent-native-cli-harness
+      - study-agent-skill-packaging
+      - compare-computer-use-agents
+    recommended_for:
+      - 学习如何把 GUI、桌面软件、Web 服务或开源项目包装成 agent 可用的结构化 CLI
+      - 参考 Claude Code plugin、Codex skill、OpenCode commands、CLI-Hub registry 和 SKILL.md 生态如何组合
+      - 比较截图/鼠标式 computer-use agent 与 CLI-first agent 工具化路线
+    not_recommended_for:
+      - 想要零风险安装任意社区 harness、npm/brew/curl 脚本或未审第三方 CLI 的工作流
+      - 需要成熟稳定的单一产品而不是快速演化的 monorepo、方法论和 registry 生态
+      - 不能接受 agent 运行真实软件、远程 API、凭据型服务或默认 CLI-Hub analytics 的隐私敏感场景
+    confidence: high
+    community_signal:
+      observed_at: 2026-05-18
+      stars: 36108
+      forks: 3515
+      subscribers: 152
+      open_issues: 38
+      open_pull_requests: 17
+      open_issues_plus_prs: 55
+      commit_count: 640
+      github_pages: true
+      homepage: https://clianything.cc/
+      latest_release: v0.3.0
+      latest_release_published_at: 2026-04-24T15:49:56Z
+      registry_harness_clis: 60
+      public_registry_clis: 16
+      root_skill_directories: 56
+      agent_harness_packages: 53
+      github_license_spdx: Apache-2.0
+      local_license_file: Apache-2.0
+      primary_language: Python

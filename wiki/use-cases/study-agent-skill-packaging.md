@@ -5,6 +5,7 @@ Use this when studying how a small reusable agent capability is packaged, instal
 ## Current Resources
 
 - [Architecture Diagram Generator](../resources/architecture-diagram-generator.md): compact example of a skill folder with `SKILL.md`, a reusable HTML template under `resources/`, screenshots/examples, and an uploadable zip.
+- [CLI-Anything](../resources/cli-anything.md): larger ecosystem example spanning Claude Code plugin packaging, Codex skill adaptation, OpenCode command files, root `skills/` catalog, generated `SKILL.md` files, and CLI-Hub registry metadata.
 
 ## Packaging Axes
 

@@ -134,3 +134,18 @@ learnings:
       - docs/intake-policy.md
       - scripts/validate-atlas.rb
     note: This prevents cross-window completion reports from hiding that the user's visible checkout is stale.
+  - learning_id: learn_20260518_validator_ruby26_compatibility
+    date: 2026-05-18
+    type: process
+    trigger: CLI-Anything intake verification found that the atlas validator failed under the default Ruby 2.6 runtime because it used Array#filter_map.
+    root_cause: The validator had adopted a Ruby 2.7 convenience method without declaring or enforcing a newer Ruby runtime.
+    future_rule: Keep repository validation scripts compatible with the default supported local runtime, or explicitly document and enforce the newer runtime before relying on the script in intake completion.
+    applies_to:
+      - validation
+      - full-analysis
+      - branch-management
+      - submission
+    status: promoted
+    promoted_to:
+      - scripts/validate-atlas.rb
+    note: The validator now uses map plus compact for branch-scope path collection so direct ruby invocation works on Ruby 2.6.

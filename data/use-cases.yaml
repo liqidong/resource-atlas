@@ -59,6 +59,7 @@ use_cases:
     description: Compare GUI agents, browser agents, remote sandboxes, and hosted computer-use APIs by privacy boundary, reliability, setup cost, and guardrails.
     resources:
       - res_20260518_ui_tars_desktop_e9f3387
+      - res_20260518_cli_anything_a32f11f
   parse-documents-for-rag:
     title: Parse documents for RAG
     description: Convert PDFs, scanned documents, images, and Office files into Markdown, JSON, images, tables, and layout-aware artifacts for retrieval pipelines.
@@ -104,3 +105,9 @@ use_cases:
     description: Learn how lightweight agent skills package instructions, templates, examples, and installable archives.
     resources:
       - res_20260518_architecture_diagram_generator_4b9087d
+      - res_20260518_cli_anything_a32f11f
+  build-agent-native-cli-harness:
+    title: Build an agent-native CLI harness
+    description: Turn GUI apps, desktop software, web services, or codebases into structured command-line tools that agents can safely discover, invoke, test, and refine.
+    resources:
+      - res_20260518_cli_anything_a32f11f

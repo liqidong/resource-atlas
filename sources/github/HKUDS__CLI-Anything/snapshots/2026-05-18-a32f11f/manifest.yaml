@@ -1,0 +1,70 @@
+source: https://github.com/HKUDS/CLI-Anything
+fetched_at: 2026-05-18
+source_ref: a32f11fc67052ff233dfaa5106de5bb1ccdf24ec
+commit_date: 2026-05-18T10:45:38+08:00
+commit_subject: Merge pull request #286 from HKUDS/chaohuang-ai-patch-2
+content_hash: 8bdc773e140b3cbf323de096cbbcb6d6dd6ff037d64da13df596660161aebcc7
+fetch_method: git clone --depth=1 plus GitHub API and GitHub web page
+files_in_upstream_clone: 1494
+temporary_clone_size: 61M
+github_api:
+  observed_at: 2026-05-18
+  created_at: 2026-03-08T13:52:57Z
+  updated_at: 2026-05-18T08:31:00Z
+  pushed_at: 2026-05-18T02:45:38Z
+  stars: 36108
+  forks: 3515
+  subscribers: 152
+  open_issues_plus_prs: 55
+  has_pages: true
+  homepage: https://clianything.cc/
+  license_spdx: Apache-2.0
+github_web:
+  observed_at: 2026-05-18
+  open_issues: 38
+  open_pull_requests: 17
+  commit_count: 640
+  primary_language: Python
+release:
+  latest: v0.3.0
+  tag_commit: 47540664f834027f336ebe0d56b28d3ca1c6711b
+  published_at: 2026-04-24T15:49:56Z
+  releases_observed: 1
+tags:
+  - tag: v0.2.0
+    commit: 3c2b7fd09f9e226a46bbfa728b5f5b3fc8b3e259
+  - tag: v0.3.0
+    commit: 47540664f834027f336ebe0d56b28d3ca1c6711b
+inventory:
+  registry_harness_clis: 60
+  public_registry_clis: 16
+  root_skill_directories: 56
+  agent_harness_packages: 53
+  test_core_files: 53
+  test_full_e2e_files: 52
+  skill_md_files: 114
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - generated demo media and assets
+  - full harness implementation directories
+  - git metadata
+exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, validation result, and evidence summary instead of vendoring the full monorepo.
+validation:
+  - command: python3 -m json.tool registry.json and public_registry.json
+    working_directory: temporary upstream clone
+    output: JSON parse OK
+  - command: python3 .github/scripts/validate_root_skills.py
+    working_directory: temporary upstream clone
+    output: Root skills validation passed
+  - command: python3 -m compileall -q cli-hub cli-anything-plugin codex-skill
+    working_directory: temporary upstream clone
+    output: Failed under local Python 3.9.6, below upstream's Python 3.10+ floor, while compiling cli-hub preview f-string syntax
+  - command: inspect CLI-Hub analytics, installer, registry, security policy, HARNESS.md, Codex skill, and README
+    working_directory: temporary upstream clone
+    output: Reviewed for network, subprocess, install, and agent execution boundaries
+license: Apache-2.0
+sensitivity: public
+publishable: partial
+notes: Full source was reviewed from a temporary clone and not committed into this repository.

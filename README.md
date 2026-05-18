@@ -19,6 +19,7 @@ This repo is not a bookmark list. Each durable entry should answer:
 | [agentmemory](wiki/resources/agentmemory.md) | GitHub repo | Recommended with caveats | Persistent memory for coding agents, MCP/hooks integration, local-first recall architecture |
 | [OmegaWiki](wiki/resources/omegawiki.md) | GitHub repo | Recommended with caveats | Claude Code research OS, persistent research wiki, paper discovery and academic writing workflows |
 | [UI-TARS Desktop](wiki/resources/ui-tars-desktop.md) | GitHub repo | Recommended with caveats | GUI/computer-use agent architecture, desktop/browser operators, VLM action loops, MCP/browser infra |
+| [CLI-Anything](wiki/resources/cli-anything.md) | GitHub repo | Recommended with caveats | Agent-native CLI harness generation, CLI-Hub registry, skill packaging, GUI-agent alternatives |
 | [MinerU](wiki/resources/mineru.md) | GitHub repo | Recommended with caveats | Parsing PDFs, scanned docs, images, and Office files into Markdown/JSON for RAG and agent workflows |
 | [Architecture Diagram Generator](wiki/resources/architecture-diagram-generator.md) | Agent skill | Recommended with caveats | Fast dark-theme HTML/SVG architecture diagrams, Claude custom skill packaging, technical documentation visuals |
 
@@ -39,6 +40,7 @@ This repo is not a bookmark list. Each durable entry should answer:
 - [Learn GUI agent architecture](wiki/use-cases/learn-gui-agent-architecture.md)
 - [Build a computer-use agent](wiki/use-cases/build-computer-use-agent.md)
 - [Compare computer-use agents](wiki/use-cases/compare-computer-use-agents.md)
+- [Build an agent-native CLI harness](wiki/use-cases/build-agent-native-cli-harness.md)
 - [Parse documents for RAG](wiki/use-cases/parse-documents-for-rag.md)
 - [Build a local document parsing pipeline](wiki/use-cases/build-local-document-parsing-pipeline.md)
 - [Compare document parsers](wiki/use-cases/compare-document-parsers.md)

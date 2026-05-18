@@ -182,3 +182,18 @@ tags:
   html-svg:
     aliases: [standalone-html, inline-svg]
     description: Resources that produce or rely on standalone HTML and inline SVG artifacts.
+  agent-native-cli:
+    aliases: [agent-cli, ai-native-cli]
+    description: Command-line interfaces designed so AI agents can discover, call, and compose software capabilities.
+  cli-generation:
+    aliases: [cli-harness-generation]
+    description: Resources that generate or scaffold command-line wrappers around existing software, APIs, or codebases.
+  cli-hub:
+    aliases: [cli-marketplace, cli-registry]
+    description: CLI-Hub and related registries for discovering and installing agent-oriented command-line tools.
+  software-automation:
+    aliases: [workflow-automation, app-automation]
+    description: Automating existing software, applications, services, or workflows through structured interfaces.
+  agent-tooling:
+    aliases: [agent-tools, tool-use]
+    description: Tooling that helps AI agents discover, install, invoke, or validate external capabilities.

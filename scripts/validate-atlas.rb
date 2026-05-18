@@ -388,25 +388,25 @@ end
 
 if current_branch && current_branch != "main"
   diff_lines = git_lines("diff", "--name-status", "main...HEAD")
-  changed_paths = diff_lines.filter_map do |line|
+  changed_paths = diff_lines.map do |line|
     parts = line.split(/\s+/)
     parts.length >= 2 ? parts[1] : nil
-  end
+  end.compact
 
-  added_intake_pages = diff_lines.filter_map do |line|
+  added_intake_pages = diff_lines.map do |line|
     status, path = line.split(/\s+/, 2)
     next unless status&.start_with?("A")
     next unless path&.match?(%r{\Awiki/(resources|inbox|rejected|candidates)/[^/]+\.md\z})
 
     path
-  end
+  end.compact
 
-  source_roots = changed_paths.filter_map do |path|
+  source_roots = changed_paths.map do |path|
     next unless path.start_with?("sources/")
 
     parts = path.split("/")
     parts.length >= 3 ? parts[0, 3].join("/") : nil
-  end.uniq
+  end.compact.uniq
 
   unless current_branch.include?("batch")
     if added_intake_pages.length > 1
