@@ -29,3 +29,48 @@ use_cases:
     description: Compare open source, local-first, API-backed, and hosted deep research systems by setup cost, source quality, privacy boundary, and reliability.
     resources:
       - res_20260518_local_deep_researcher_e172109
+  study-claude-code-research-workflows:
+    title: Study Claude Code research workflows
+    description: Study how Claude Code skills can encode long-running research workflows with source boundaries, validation, logs, and human gates.
+    resources:
+      - res_20260518_omegawiki_1fd1e58
+  build-research-wiki:
+    title: Build a research wiki
+    description: Use wiki-centric, typed-entity systems as references for persistent research memory, knowledge graphs, and compounding notes.
+    resources:
+      - res_20260518_omegawiki_1fd1e58
+  automate-paper-discovery:
+    title: Automate paper discovery
+    description: Compare workflows that recommend, triage, and optionally ingest papers from arXiv, Semantic Scholar, DeepXiv, venue lists, and existing wiki state.
+    resources:
+      - res_20260518_omegawiki_1fd1e58
+  learn-gui-agent-architecture:
+    title: Learn GUI agent architecture
+    description: Study how multimodal GUI agents capture screenshots, call VLMs, parse actions, and execute desktop or browser operations.
+    resources:
+      - res_20260518_ui_tars_desktop_e9f3387
+  build-computer-use-agent:
+    title: Build a computer-use agent
+    description: Find implementation references for agents that can control desktops, browsers, devices, or remote sandboxes from natural-language instructions.
+    resources:
+      - res_20260518_ui_tars_desktop_e9f3387
+  compare-computer-use-agents:
+    title: Compare computer-use agents
+    description: Compare GUI agents, browser agents, remote sandboxes, and hosted computer-use APIs by privacy boundary, reliability, setup cost, and guardrails.
+    resources:
+      - res_20260518_ui_tars_desktop_e9f3387
+  parse-documents-for-rag:
+    title: Parse documents for RAG
+    description: Convert PDFs, scanned documents, images, and Office files into Markdown, JSON, images, tables, and layout-aware artifacts for retrieval pipelines.
+    resources:
+      - res_20260518_mineru_603de17
+  build-local-document-parsing-pipeline:
+    title: Build a local document parsing pipeline
+    description: Self-host document parsing infrastructure when privacy, batch processing, or control over model/runtime choices matters.
+    resources:
+      - res_20260518_mineru_603de17
+  compare-document-parsers:
+    title: Compare document parsers
+    description: Compare open-source and hosted document parsers by layout quality, table/formula handling, offline boundary, license, deployment burden, and structured output.
+    resources:
+      - res_20260518_mineru_603de17

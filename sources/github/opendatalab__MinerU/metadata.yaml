@@ -1,0 +1,20 @@
+source_url: https://github.com/opendatalab/MinerU
+source_kind: github
+owner: opendatalab
+repo: MinerU
+default_branch: master
+reviewed_ref: 603de17e95e7795374d02b604cc0fd27998613f4
+reviewed_at: 2026-05-18
+license: MinerU Open Source License
+github_license_spdx: NOASSERTION
+github_api_observed_at: 2026-05-18
+github_stars: 63477
+github_forks: 5351
+github_open_issues_plus_prs: 17
+github_pages: true
+homepage: https://opendatalab.github.io/MinerU/
+pypi_version: 3.1.14
+latest_release: mineru-3.1.14-released
+latest_release_published_at: 2026-05-15T15:02:06Z
+resource_id: res_20260518_mineru_603de17
+snapshot: snapshots/2026-05-18-603de17/

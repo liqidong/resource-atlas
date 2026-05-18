@@ -1,0 +1,58 @@
+source: https://github.com/bytedance/UI-TARS-desktop
+fetched_at: 2026-05-18
+source_ref: e9f3387288da4af2ad99972da2ac916cdabce093
+commit_date: 2026-05-18 10:55:46 +0800
+commit_subject: "chore: license (#1895)"
+content_hash: 28b651aa458c23264bf8d7e59ef91ed6fa59a291cc5e20fb517e30b66e75c7c5
+fetch_method: git clone --depth=1 plus GitHub API and GitHub web repository view
+files_in_upstream_clone: 2491
+typescript_files: 1440
+javascript_files: 15
+markdown_files: 202
+json_files: 236
+total_size: 90M
+github_api:
+  observed_at: 2026-05-18
+  created_at: 2025-01-19T09:04:43Z
+  pushed_at: 2026-05-18T02:55:49Z
+  default_branch: main
+  stars: 34494
+  forks: 3455
+  watchers: 262
+  open_issues: 317
+  open_pull_requests: 75
+  open_issues_plus_prs: 392
+  commit_count_from_github_page: 1109
+  has_pages: true
+  homepage: https://agent-tars.com
+  license_spdx: Apache-2.0
+latest_release:
+  tag: v0.3.0
+  published_at: 2025-11-04T16:10:39Z
+  target_commitish: main
+  assets_count: 0
+homebrew:
+  observed_at: 2026-05-18
+  cask: ui-tars
+  version: 0.2.4
+  source: https://formulae.brew.sh/cask/ui-tars
+security_observations:
+  - observed_at: 2026-05-18
+    source: https://github.com/bytedance/UI-TARS-desktop/pull/1894
+    status: open_pr_not_independently_validated
+    summary: Open PR proposes Host header validation for Agent TARS/Tarko local servers to address an alleged DNS-rebinding exposure.
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - pnpm-lock.yaml
+  - git metadata
+exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, validation result, and evidence summary instead of vendoring the full implementation.
+validation:
+  command: node script parsing all upstream package.json files
+  working_directory: temporary upstream clone
+  output: "parsed package.json files: 80"
+license: Apache-2.0
+sensitivity: public
+publishable: partial
+notes: Full source was reviewed from a temporary clone and not committed into this repository. Runtime behavior was not tested with OS permissions or a live VLM endpoint.

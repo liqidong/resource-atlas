@@ -1,0 +1,49 @@
+source: https://github.com/opendatalab/MinerU
+fetched_at: 2026-05-18
+source_ref: 603de17e95e7795374d02b604cc0fd27998613f4
+commit_date: 2026-05-15T14:59:23Z
+commit_subject: Update version.py with new version
+content_hash: 7d8417f536a382f888820ef069d8a2b3c30aee776aa61ff7fa02e57b3a880f92
+fetch_method: git clone --depth=1 plus GitHub API
+files_in_upstream_clone: 419
+python_files: 214
+markdown_files: 64
+temporary_clone_size: 38M
+github_api:
+  observed_at: 2026-05-18
+  created_at: 2024-02-29T08:52:34Z
+  pushed_at: 2026-05-17T17:39:30Z
+  stars: 63477
+  forks: 5351
+  open_issues_plus_prs: 17
+  commit_count: 5429
+  has_pages: true
+  homepage: https://opendatalab.github.io/MinerU/
+  license_spdx: NOASSERTION
+release:
+  latest: mineru-3.1.14-released
+  published_at: 2026-05-15T15:02:06Z
+  tag_commit: d60304f5fe21a774b83b11216439f4c7b5829db2
+pypi:
+  version: 3.1.14
+  requires_python: ">=3.10,<3.14"
+  license_expression: LicenseRef-MinerU-Open-Source-License
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - demo PDFs and Office documents
+  - bundled model/resource files
+  - git metadata
+exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, validation result, and evidence summary instead of vendoring the full implementation.
+validation:
+  - command: python3.12 -m py_compile all upstream Python files
+    working_directory: temporary upstream clone
+    output: py_compile OK
+  - command: python3 -m py_compile all upstream Python files
+    working_directory: temporary upstream clone
+    output: failed under Python 3.9.6 because project uses Python 3.10+ syntax; this matches upstream requires-python.
+license: MinerU Open Source License, Apache 2.0 based with additional terms
+sensitivity: public
+publishable: partial
+notes: Full source was reviewed from a temporary clone and not committed into this repository.

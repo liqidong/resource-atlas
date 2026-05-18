@@ -23,7 +23,7 @@ resources:
     update_status: current
     review_status: reviewed
     lifecycle_status: shortlisted
-    maturity: useful
+    maturity: experimental_useful
     recommendation: recommended
     fit_for_user: high
     time_to_value: low
@@ -95,7 +95,7 @@ resources:
     recommendation: recommended_with_caveats
     fit_for_user: high
     time_to_value: medium
-    setup_cost: medium
+    setup_cost: high
     maintenance_burden: high
     risk_level: medium
     evidence_quality: high
@@ -141,3 +141,240 @@ resources:
       homepage:
       github_license_spdx: MIT
       local_license_file: MIT
+  - resource_id: res_20260518_omegawiki_1fd1e58
+    canonical_slug: omegawiki
+    aliases:
+      - omegawiki
+      - OmegaWiki
+      - ΩmegaWiki
+      - skyllwt/OmegaWiki
+      - LLM-Wiki research platform
+    title: OmegaWiki
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/skyllwt/OmegaWiki
+    canonical_source: https://github.com/skyllwt/OmegaWiki
+    local_source: sources/github/skyllwt__OmegaWiki/
+    source_fingerprints:
+      - git:1fd1e5856e09e5ccc36d31845af201351f8a3413
+      - tree-content-sha256:5d59f05ca57beacb40cd0793c17c17ce5d7c77b99931dc5eea5e603b560c5684
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: 1fd1e5856e09e5ccc36d31845af201351f8a3413
+    upstream_ref: 1fd1e5856e09e5ccc36d31845af201351f8a3413
+    upstream_version: main@1fd1e58 / changelog 1.4.0
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: useful
+    recommendation: recommended_with_caveats
+    fit_for_user: high
+    time_to_value: high
+    setup_cost: high
+    maintenance_burden: high
+    risk_level: high
+    evidence_quality: high
+    will_i_actually_use_this: yes
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: bilingual
+    redaction_needed: no
+    tags:
+      - claude-code
+      - agent-skills
+      - research-wiki
+      - paper-ingestion
+      - knowledge-graph
+      - research-automation
+      - academic-writing
+      - experiment-tracking
+      - arxiv
+      - semantic-scholar
+      - deepxiv
+      - local-web-ui
+      - github-actions
+      - obsidian
+      - open-source-template
+    use_cases:
+      - study-claude-code-research-workflows
+      - build-research-wiki
+      - automate-paper-discovery
+    recommended_for:
+      - 研究 Claude Code skill 如何组织长流程、可验证的学术工作流
+      - 参考持久 wiki、typed graph、paper ingest、idea/experiment/paper writing 的一体化设计
+      - 给 Resource Atlas、研究助手或知识库项目借鉴 schema、日志、验证器、source boundary 设计
+    not_recommended_for:
+      - 想要零配置论文总结器或普通 citation manager
+      - 需要纯本地、离线、私密的研究资料处理工具
+      - 不愿给 agent 广泛文件/网络/命令权限或不使用 Claude Code 的用户
+    confidence: high
+    community_signal:
+      observed_at: 2026-05-18
+      stars: 683
+      forks: 104
+      subscribers: 9
+      open_issues: 1
+      open_prs: 0
+      github_pages: false
+      homepage:
+      github_license_spdx: MIT
+      local_license_file: MIT
+      latest_tag: v1.0.0
+      github_releases: none
+      changelog_version: 1.4.0
+      primary_language: Python
+  - resource_id: res_20260518_ui_tars_desktop_e9f3387
+    canonical_slug: ui-tars-desktop
+    aliases:
+      - UI-TARS Desktop
+      - UI-TARS-desktop
+      - Agent TARS
+      - TARS Stack
+    title: UI-TARS Desktop
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/bytedance/UI-TARS-desktop
+    canonical_source: https://github.com/bytedance/UI-TARS-desktop
+    local_source: sources/github/bytedance__UI-TARS-desktop/
+    source_fingerprints:
+      - git:e9f3387288da4af2ad99972da2ac916cdabce093
+      - tree-content-sha256:28b651aa458c23264bf8d7e59ef91ed6fa59a291cc5e20fb517e30b66e75c7c5
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: e9f3387288da4af2ad99972da2ac916cdabce093
+    upstream_ref: e9f3387288da4af2ad99972da2ac916cdabce093
+    upstream_version: main@e9f3387
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: useful
+    recommendation: recommended_with_caveats
+    fit_for_user: high
+    time_to_value: medium
+    setup_cost: medium
+    maintenance_burden: high
+    risk_level: high
+    evidence_quality: high
+    will_i_actually_use_this: maybe
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: en
+    redaction_needed: no
+    tags:
+      - gui-agent
+      - computer-use
+      - browser-agent
+      - desktop-automation
+      - multimodal-agent
+      - vision-language-model
+      - mcp
+      - agent-framework
+      - ui-automation
+      - open-source-template
+    use_cases:
+      - learn-gui-agent-architecture
+      - build-computer-use-agent
+      - compare-computer-use-agents
+    recommended_for:
+      - 学习桌面/浏览器 GUI agent 的截图、VLM、动作解析、执行循环
+      - 参考 Electron 桌面 agent、SDK、operator、MCP/browser infra 的组合方式
+      - 比较 computer-use agent 的本地权限、远程模型、遥测和安全边界
+    not_recommended_for:
+      - 想要零配置、稳定、可完全信任的日常桌面助手
+      - 不能接受屏幕截图发往模型 endpoint 的隐私敏感工作流
+      - 不想处理 Node/Electron、系统权限、VLM endpoint、远程服务和版本漂移的人
+    confidence: medium_high
+    community_signal:
+      observed_at: 2026-05-18
+      stars: 34494
+      forks: 3455
+      watchers: 262
+      open_issues: 317
+      open_pull_requests: 75
+      open_issues_plus_prs: 392
+      commit_count: 1109
+      latest_release: v0.3.0
+      latest_release_published_at: 2025-11-04T16:10:39Z
+      homebrew_cask_version: 0.2.4
+      github_pages: true
+      homepage: https://agent-tars.com
+      github_license_spdx: Apache-2.0
+      local_license_file: Apache-2.0
+  - resource_id: res_20260518_mineru_603de17
+    canonical_slug: mineru
+    aliases:
+      - MinerU
+      - opendatalab/MinerU
+      - magic-pdf
+    title: MinerU
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/opendatalab/MinerU
+    canonical_source: https://github.com/opendatalab/MinerU
+    local_source: sources/github/opendatalab__MinerU/
+    source_fingerprints:
+      - git:603de17e95e7795374d02b604cc0fd27998613f4
+      - tree-content-sha256:7d8417f536a382f888820ef069d8a2b3c30aee776aa61ff7fa02e57b3a880f92
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: 603de17e95e7795374d02b604cc0fd27998613f4
+    upstream_ref: 603de17e95e7795374d02b604cc0fd27998613f4
+    upstream_version: 3.1.14 / master@603de17
+    latest_release: mineru-3.1.14-released
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: mature
+    recommendation: recommended_with_caveats
+    fit_for_user: high
+    time_to_value: medium
+    setup_cost: high
+    maintenance_burden: high
+    risk_level: medium
+    evidence_quality: high
+    will_i_actually_use_this: yes
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: en/zh
+    redaction_needed: no
+    tags:
+      - document-parsing
+      - pdf-extraction
+      - ocr
+      - rag-ingestion
+      - multimodal-document-ai
+      - office-document-parsing
+      - local-first
+      - open-source-template
+    use_cases:
+      - parse-documents-for-rag
+      - build-local-document-parsing-pipeline
+      - compare-document-parsers
+    recommended_for:
+      - 把 PDF、扫描件、图片、DOCX、PPTX、XLSX 转成 Markdown/JSON 供 RAG 或 agent 使用
+      - 评估本地/私有文档解析基础设施
+      - 处理论文、表格、公式、多栏版式和 OCR-heavy 文档的开源方案对比
+    not_recommended_for:
+      - 完全不想处理模型下载、GPU/CPU 资源和部署环境的人
+      - 要求许可证等同于原版 Apache-2.0 且没有附加条款的场景
+      - 想把所有模式和集成都默认视为离线/本地的隐私敏感流程
+    confidence: high
+    community_signal:
+      observed_at: 2026-05-18
+      stars: 63477
+      forks: 5351
+      open_issues_plus_prs: 17
+      commit_count: 5429
+      github_pages: true
+      homepage: https://opendatalab.github.io/MinerU/
+      latest_release: mineru-3.1.14-released
+      latest_release_published_at: 2026-05-15T15:02:06Z
+      pypi_version: 3.1.14
+      github_license_spdx: NOASSERTION
+      local_license_file: MinerU Open Source License

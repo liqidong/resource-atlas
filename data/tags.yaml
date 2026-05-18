@@ -56,3 +56,90 @@ tags:
   citation-workflow:
     aliases: [source-citations]
     description: Workflows that track sources used in generated reports.
+  claude-code:
+    aliases: [anthropic-claude-code]
+    description: Resources designed around Claude Code as the agent runtime.
+  agent-skills:
+    aliases: [slash-commands, agent-workflows]
+    description: Reusable agent skills or command workflows that guide long-running work.
+  research-wiki:
+    aliases: [llm-wiki, structured-research-notes]
+    description: Persistent wiki systems for research memory and structured knowledge.
+  paper-ingestion:
+    aliases: [paper-intake, paper-parsing]
+    description: Workflows that ingest academic papers into structured notes or graphs.
+  knowledge-graph:
+    aliases: [typed-graph, graph-memory]
+    description: Resources that model knowledge as entities and relationships.
+  research-automation:
+    aliases: [research-os, research-pipeline]
+    description: Tools that automate multi-step academic or technical research workflows.
+  academic-writing:
+    aliases: [paper-writing, scholarly-writing]
+    description: Resources for drafting, reviewing, compiling, or presenting academic writing.
+  experiment-tracking:
+    aliases: [experiment-lifecycle]
+    description: Resources that track experiment plans, runs, results, and decisions.
+  arxiv:
+    aliases: [arXiv]
+    description: Resources that discover, fetch, or process arXiv papers.
+  semantic-scholar:
+    aliases: [s2]
+    description: Resources using Semantic Scholar metadata, citations, or recommendations.
+  deepxiv:
+    aliases: [deepxiv-sdk]
+    description: Resources using DeepXiv search, summaries, or paper metadata.
+  local-web-ui:
+    aliases: [local-dashboard, localhost-ui]
+    description: Tools with a local browser interface served from the user's machine.
+  github-actions:
+    aliases: [ci-automation]
+    description: Resources that use GitHub Actions for scheduled or automated workflows.
+  obsidian:
+    aliases: [obsidian-wiki]
+    description: Resources that interoperate with Obsidian-style wikilinks or graph views.
+  gui-agent:
+    aliases: [gui-operator, ui-agent]
+    description: Agents that perceive and operate graphical user interfaces.
+  computer-use:
+    aliases: [computer-control]
+    description: Agents or tools that can control a user's computer through screenshots, mouse, keyboard, and application actions.
+  browser-agent:
+    aliases: [browser-use]
+    description: Agents or tooling focused on browser operation and web task execution.
+  desktop-automation:
+    aliases: [desktop-agent]
+    description: Desktop application automation, including OS-level screen, mouse, and keyboard control.
+  multimodal-agent:
+    aliases: [vision-agent]
+    description: Agent systems that use multimodal inputs such as screenshots and images.
+  vision-language-model:
+    aliases: [vlm]
+    description: Resources centered on vision-language model usage or integration.
+  mcp:
+    aliases: [model-context-protocol]
+    description: Resources using or implementing Model Context Protocol clients, servers, or tools.
+  agent-framework:
+    aliases: [agent-stack]
+    description: Frameworks or stacks for building AI agents.
+  ui-automation:
+    aliases: [interface-automation]
+    description: Automation of graphical interfaces, UI actions, or workflow execution through UI controls.
+  document-parsing:
+    aliases: [document-understanding]
+    description: Resources for converting documents into structured, machine-readable representations.
+  pdf-extraction:
+    aliases: [pdf-parsing, pdf-converter]
+    description: Resources focused on extracting text, layout, tables, formulas, and images from PDFs.
+  ocr:
+    aliases: [optical-character-recognition]
+    description: Resources that perform OCR over scanned documents or images.
+  rag-ingestion:
+    aliases: [rag-preprocessing, retrieval-ingestion]
+    description: Resources that prepare source material for retrieval-augmented generation systems.
+  multimodal-document-ai:
+    aliases: [document-ai, vlm-document-parsing]
+    description: Resources using vision, OCR, layout, or multimodal models to understand documents.
+  office-document-parsing:
+    aliases: [docx-pptx-xlsx]
+    description: Resources that parse Office formats such as DOCX, PPTX, and XLSX.

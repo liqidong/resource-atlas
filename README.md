@@ -16,6 +16,9 @@ This repo is not a bookmark list. Each durable entry should answer:
 | --- | --- | --- | --- |
 | [Yao Open Prompts](wiki/resources/yao-open-prompts.md) | GitHub repo | Recommended | Practical Chinese prompt library, prompt collection structure, GEO/content prompt examples |
 | [Local Deep Researcher](wiki/resources/local-deep-researcher.md) | GitHub repo | Recommended with caveats | Learning LangGraph research loops, local LLM research prototypes, search summarization architecture |
+| [OmegaWiki](wiki/resources/omegawiki.md) | GitHub repo | Recommended with caveats | Claude Code research OS, persistent research wiki, paper discovery and academic writing workflows |
+| [UI-TARS Desktop](wiki/resources/ui-tars-desktop.md) | GitHub repo | Recommended with caveats | GUI/computer-use agent architecture, desktop/browser operators, VLM action loops, MCP/browser infra |
+| [MinerU](wiki/resources/mineru.md) | GitHub repo | Recommended with caveats | Parsing PDFs, scanned docs, images, and Office files into Markdown/JSON for RAG and agent workflows |
 
 ## Use-Case Entrypoints
 
@@ -25,6 +28,15 @@ This repo is not a bookmark list. Each durable entry should answer:
 - [Learn LangGraph research agent architecture](wiki/use-cases/learn-langgraph-research-agent.md)
 - [Build a local deep research prototype](wiki/use-cases/build-local-deep-research-prototype.md)
 - [Compare deep research tools](wiki/use-cases/compare-deep-research-tools.md)
+- [Study Claude Code research workflows](wiki/use-cases/study-claude-code-research-workflows.md)
+- [Build a research wiki](wiki/use-cases/build-research-wiki.md)
+- [Automate paper discovery](wiki/use-cases/automate-paper-discovery.md)
+- [Learn GUI agent architecture](wiki/use-cases/learn-gui-agent-architecture.md)
+- [Build a computer-use agent](wiki/use-cases/build-computer-use-agent.md)
+- [Compare computer-use agents](wiki/use-cases/compare-computer-use-agents.md)
+- [Parse documents for RAG](wiki/use-cases/parse-documents-for-rag.md)
+- [Build a local document parsing pipeline](wiki/use-cases/build-local-document-parsing-pipeline.md)
+- [Compare document parsers](wiki/use-cases/compare-document-parsers.md)
 
 ## Intake Modes
 

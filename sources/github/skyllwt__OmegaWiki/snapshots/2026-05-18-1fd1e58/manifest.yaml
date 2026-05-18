@@ -1,0 +1,59 @@
+source: https://github.com/skyllwt/OmegaWiki
+fetched_at: 2026-05-18
+source_ref: 1fd1e5856e09e5ccc36d31845af201351f8a3413
+commit_date: 2026-05-18 08:51:15 +0800
+commit_subject: Release v1.4.0 — /poster skill for academic poster generation (#51)
+content_hash: 5d59f05ca57beacb40cd0793c17c17ce5d7c77b99931dc5eea5e603b560c5684
+fetch_method: git clone --depth=1
+files_in_upstream_clone: 247
+python_files: 23
+markdown_files: 144
+markdown_total_lines: 26895
+temporary_clone_size: 19M
+github_api:
+  observed_at: 2026-05-18
+  created_at: 2026-04-09T14:10:46Z
+  pushed_at: 2026-05-18T02:19:25Z
+  stars: 683
+  forks: 104
+  subscribers: 9
+  open_issues: 1
+  open_prs: 0
+  has_pages: false
+  homepage:
+  license_spdx: MIT
+  default_branch: main
+  primary_language: Python
+  languages:
+    Python: 617864
+    JavaScript: 88283
+    CSS: 23294
+    HTML: 13435
+    PowerShell: 9935
+    Shell: 8964
+    Go Template: 1266
+  latest_tag: v1.0.0
+  github_releases: none
+  changelog_version: 1.4.0
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - image assets
+  - generated wiki/runtime/app files
+  - git metadata
+exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, validation result, and evidence summary instead of vendoring the full research platform.
+validation:
+  - command: python3 -m py_compile tools/*.py
+    working_directory: temporary upstream clone
+    output: py_compile OK
+  - command: PYTHONPATH=tools python3 .sleepcode/tests/test_discover_from_venue.py
+    working_directory: temporary upstream clone
+    output: 20 unittest tests passed
+  - command: python3 tools/lint.py --help
+    working_directory: temporary upstream clone
+    output: not run to completion in inspection environment because PyYAML was not installed
+license: MIT
+sensitivity: public
+publishable: partial
+notes: Full source was reviewed from a temporary clone and not committed into this repository.
