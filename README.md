@@ -52,34 +52,13 @@ This repo is not a bookmark list. Each durable entry should answer:
 - [Document system architecture](wiki/use-cases/document-system-architecture.md)
 - [Study agent skill packaging](wiki/use-cases/study-agent-skill-packaging.md)
 
-## Intake Modes
+## Repository Map
 
-- **Quick card**: capture quickly when a resource may be useful but does not deserve full analysis yet.
-- **Full analysis**: read source evidence, write a durable resource page, update `data/resources.yaml`.
-- **Refresh/update**: check upstream changes and preserve judgment history.
-
-Operational intake rules live in [`docs/intake-policy.md`](docs/intake-policy.md).
-
-## Stewardship Vision
-
-Resource Atlas is intended to become an agent-managed memory system, not just a user-maintained list. As the library grows, agents should learn the user's resource taste from accepted entries, use cases, judgments, and learnings; then use that understanding to propose relevant new resources and refresh stale entries, with user review before proactive discoveries become canonical.
-
-See [`docs/stewardship-vision.md`](docs/stewardship-vision.md).
-
-## Learning Loop
-
-This repo includes a lightweight self-improvement loop:
-
-- `data/learnings.yaml` tracks durable process lessons.
-- `wiki/learnings/` stores human-readable retrospectives.
-- `docs/self-improvement-policy.md` defines when to record and promote a lesson.
-
-## Source Of Truth
-
-- `data/resources.yaml` is the canonical machine-readable index.
-- `wiki/resources/` contains human-readable analysis pages.
-- `sources/` contains source metadata and evidence snapshots, not full mirrors by default.
-- `runtime/templates/` defines intake templates.
-- `docs/intake-policy.md` is the operating procedure.
-- `docs/stewardship-vision.md` defines the long-term agent stewardship model.
-- `data/learnings.yaml` records durable process improvements.
+- Agent entry contract: [`AGENTS.md`](AGENTS.md)
+- Intake, refresh, branch, and completion procedure: [`docs/intake-policy.md`](docs/intake-policy.md)
+- Long-term agent stewardship model: [`docs/stewardship-vision.md`](docs/stewardship-vision.md)
+- Source retention rules: [`docs/source-retention-policy.md`](docs/source-retention-policy.md)
+- Public redaction rules: [`docs/public-redaction-policy.md`](docs/public-redaction-policy.md)
+- Durable process lessons: [`docs/self-improvement-policy.md`](docs/self-improvement-policy.md), `data/learnings.yaml`, and `wiki/learnings/`
+- Intake templates: [`runtime/templates/`](runtime/templates/)
+- Validation gate: `ruby scripts/validate-atlas.rb`

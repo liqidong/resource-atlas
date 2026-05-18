@@ -183,3 +183,21 @@ learnings:
       - AGENTS.md
       - docs/intake-policy.md
     note: This prevents stale forks from inheriting parent credibility without evidence.
+  - learning_id: learn_20260518_single_source_workflow_rules
+    date: 2026-05-18
+    type: process
+    trigger: User asked whether the Resource Atlas workflow rules had become too redundant and whether the proposed AGENTS/intake/templates/validator split would make the repository better.
+    root_cause: The same operational rules had spread across AGENTS.md, README.md, docs/intake-policy.md, templates, and the validator, increasing startup cost and drift risk for future agents.
+    future_rule: "Keep each workflow rule in one primary layer: AGENTS.md for role and red lines, docs/intake-policy.md for the detailed procedure, runtime/templates for output shape, and scripts/validate-atlas.rb for hard checks."
+    applies_to:
+      - agent-onboarding
+      - documentation-maintenance
+      - rule-change
+      - validation
+    status: promoted
+    promoted_to:
+      - AGENTS.md
+      - README.md
+      - docs/intake-policy.md
+      - docs/self-improvement-policy.md
+    note: This keeps the repository easier for agents to enter without weakening quality gates.

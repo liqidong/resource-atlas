@@ -1,6 +1,8 @@
 # Self-Improvement Policy
 
-Resource Atlas should remember process mistakes and durable user preferences, not just resource facts.
+Resource Atlas should remember process mistakes and durable user preferences,
+not just resource facts. This is an exception-triggered improvement loop, not a
+requirement to write a retrospective after every intake.
 
 Use this policy when:
 
@@ -51,13 +53,14 @@ Bad examples:
 - Facts about a specific resource that belong only in that resource page.
 - Vague advice like "be careful."
 
-## Before Finishing Intake
+## Before Finishing Intake Or Rule Changes
 
-Ask:
+For full analyses, refreshes, and rule changes, run a brief trigger check:
 
 1. Did the user correct our process?
 2. Did a reviewer catch something that could happen again?
 3. Did verification fail in a reusable way?
 4. Should this change `AGENTS.md`, a policy doc, or a template?
 
-If yes, add or update a learning.
+If yes, add or update a learning. If all answers are no, continue without adding
+process documentation.

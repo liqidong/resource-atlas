@@ -1,6 +1,8 @@
 # Intake Policy
 
-Resource Atlas has three canonical intake modes plus non-canonical candidate and rejected-note modes.
+Resource Atlas has three canonical intake modes plus non-canonical candidate and
+rejected-note modes. This file is the canonical operating procedure for intake,
+refresh/update, branch/worktree handling, submission, and completion gates.
 
 ## Default Agent Posture
 
@@ -20,16 +22,20 @@ Use the smallest mode that preserves future recall:
 
 ## Branch And Worktree Gate
 
-Default intake isolation is:
+Default isolation is proportional to risk.
 
-```text
-one resource = one branch = one git worktree = one resource-scoped commit
-```
+- Full analyses, substantial refreshes, and rule changes should use one
+  resource, one branch, one git worktree, and one resource-scoped commit.
+- Quick cards, rejected notes, and candidate notes may be handled as a small
+  resource-scoped commit from a clean, current `main` when there is no parallel
+  work, local WIP, or privacy risk.
+- Use a dedicated branch/worktree whenever the task is high-risk, likely to touch
+  source evidence, part of a batch, or easy to confuse with nearby intake work.
 
 This keeps review, rollback, refresh, and provenance clean even when several
 resources are being collected in parallel.
 
-Before starting a resource intake:
+Before starting a branch-backed resource intake:
 
 1. Return to a clean, current `main`.
 2. Create a resource branch whose name matches the resource slug.
@@ -47,10 +53,11 @@ Before starting a resource intake:
    ```
 
 For a normal single-resource branch, the merge candidate should contain only one
-resource page or inbox card, one matching source subtree, and the minimal shared
-catalog/index/log changes for that same resource. If the diff contains multiple
-resource pages, multiple source subtrees, or a branch name that no longer matches
-the actual scope, stop and split the work before merging.
+resource page or inbox card, one matching source subtree when evidence is
+retained, and the minimal shared catalog/index/log changes for that same
+resource. If the diff contains multiple resource pages, multiple source
+subtrees, or a branch name that no longer matches the actual scope, stop and
+split the work before merging.
 
 If the user intentionally wants several resources processed at once, use sibling
 worktrees/branches by default. Only use a batch branch when batch mode is
@@ -120,18 +127,22 @@ Use when the user asks to add a resource to the library.
 Default workflow:
 
 1. Assign or resolve a stable `resource_id`.
-2. Run multi-agent review when possible:
+2. Run independent review passes when possible:
    - source/structure reviewer
    - value/use-case reviewer
    - integrator
-   If subagent tooling is unavailable, the integrator should run the source/structure and value/use-case passes sequentially and note that fallback in the resource page.
+   Use subagents for non-trivial or high-risk resources when tools allow it. If
+   subagent tooling is unavailable or would add more overhead than value, the
+   integrator should run the source/structure and value/use-case passes
+   sequentially and note that fallback in the resource page.
 3. Capture source evidence under `sources/`.
 4. Write `wiki/resources/{slug}.md`.
 5. Update `data/resources.yaml`.
 6. Update `data/tags.yaml`, `data/use-cases.yaml`, and `data/relationships.yaml` only when needed.
 7. Update README only when the resource is shortlisted, recommended, or important to watch.
 8. Append `wiki/log.md`.
-9. Check whether the intake revealed a reusable process lesson. If yes, update `data/learnings.yaml` and `wiki/learnings/`.
+9. Run the self-improvement trigger check. Create or update a learning only if
+   the intake revealed a durable process lesson.
 10. Before merge, run `git diff --name-status main...HEAD` and confirm the branch scope still matches the intended resource.
 11. Run `ruby scripts/validate-atlas.rb` before claiming completion. If the script is unavailable, manually verify YAML parsing, data/page consistency, local links, required sections, public path hygiene, and source references.
 
@@ -152,7 +163,9 @@ Use when an already analyzed resource may have changed. Follow `docs/update-poli
 
 ## Self-Improvement Check
 
-Before finishing a full analysis, refresh, or rule change, apply `docs/self-improvement-policy.md`. At minimum ask:
+Before finishing a full analysis, refresh, or rule change, apply
+`docs/self-improvement-policy.md` as a trigger check, not as a mandatory
+retrospective. At minimum ask:
 
 - Did the user correct the process?
 - Did multi-agent review catch a repeatable issue?
@@ -161,3 +174,5 @@ Before finishing a full analysis, refresh, or rule change, apply `docs/self-impr
 - Should a policy, template, or `AGENTS.md` rule change?
 
 If yes, create or update a learning using `docs/self-improvement-policy.md`.
+Do not add a learning for one-off typos, resource-specific facts, or vague
+advice that will not change future behavior.
