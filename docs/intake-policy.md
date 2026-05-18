@@ -141,6 +141,7 @@ Before marking a full analysis public-ready or updating README:
 
 - Make `recommendation` in `data/resources.yaml` and page frontmatter as specific as the narrative judgment. Use values such as `recommended_with_caveats` when caveats materially change how the resource should be used.
 - Separate stable evidence from volatile community signal. Commit refs, content hashes, license files, and validation results are evidence; stars, forks, and issue counts are advisory snapshots with `observed_at` dates.
+- For GitHub forks, make the source identity explicit. Preserve the user-provided fork as reviewed source when appropriate, record the parent/source repository and freshness comparison when available, and label fork metrics separately from parent project metrics.
 - Write validation commands and source paths in public artifacts as repo-relative or temporary-clone-relative paths. Do not publish absolute `/tmp`, home-directory, or machine-specific paths unless they are necessary evidence.
 
 After batch intake or multi-branch integration, do not only check that YAML parses. Confirm `ruby scripts/validate-atlas.rb` passes after it has checked page/data field calibration, `wiki/index.md`, source metadata/manifests, learning pages, local links, and branch scope.

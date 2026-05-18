@@ -16,6 +16,7 @@ This repo is not a bookmark list. Each durable entry should answer:
 | --- | --- | --- | --- |
 | [Yao Open Prompts](wiki/resources/yao-open-prompts.md) | GitHub repo | Recommended | Practical Chinese prompt library, prompt collection structure, GEO/content prompt examples |
 | [Local Deep Researcher](wiki/resources/local-deep-researcher.md) | GitHub repo | Recommended with caveats | Learning LangGraph research loops, local LLM research prototypes, search summarization architecture |
+| [TradingAgents](wiki/resources/tradingagents.md) | GitHub repo | Recommended with caveats | Multi-agent financial analysis workflows, LangGraph role orchestration, AI trading risk boundaries |
 | [agentmemory](wiki/resources/agentmemory.md) | GitHub repo | Recommended with caveats | Persistent memory for coding agents, MCP/hooks integration, local-first recall architecture |
 | [OmegaWiki](wiki/resources/omegawiki.md) | GitHub repo | Recommended with caveats | Claude Code research OS, persistent research wiki, paper discovery and academic writing workflows |
 | [UI-TARS Desktop](wiki/resources/ui-tars-desktop.md) | GitHub repo | Recommended with caveats | GUI/computer-use agent architecture, desktop/browser operators, VLM action loops, MCP/browser infra |
@@ -31,6 +32,9 @@ This repo is not a bookmark list. Each durable entry should answer:
 - [Learn LangGraph research agent architecture](wiki/use-cases/learn-langgraph-research-agent.md)
 - [Build a local deep research prototype](wiki/use-cases/build-local-deep-research-prototype.md)
 - [Compare deep research tools](wiki/use-cases/compare-deep-research-tools.md)
+- [Study multi-agent financial workflows](wiki/use-cases/study-multi-agent-financial-workflows.md)
+- [Learn LangGraph financial agent architecture](wiki/use-cases/learn-langgraph-financial-agent-architecture.md)
+- [Evaluate AI trading agent risk](wiki/use-cases/evaluate-ai-trading-agent-risk.md)
 - [Build an agent memory layer](wiki/use-cases/build-agent-memory-layer.md)
 - [Compare agent memory systems](wiki/use-cases/compare-agent-memory-systems.md)
 - [Study agent hooks and MCP memory](wiki/use-cases/study-agent-hooks-and-mcp-memory.md)

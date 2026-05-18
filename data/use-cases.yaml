@@ -111,3 +111,18 @@ use_cases:
     description: Turn GUI apps, desktop software, web services, or codebases into structured command-line tools that agents can safely discover, invoke, test, and refine.
     resources:
       - res_20260518_cli_anything_a32f11f
+  study-multi-agent-financial-workflows:
+    title: Study multi-agent financial workflows
+    description: Learn how specialized LLM agents can divide market analysis, debate investment theses, and route final decisions through risk and portfolio roles.
+    resources:
+      - res_20260518_tradingagents_589b351
+  learn-langgraph-financial-agent-architecture:
+    title: Learn LangGraph financial agent architecture
+    description: Study a LangGraph implementation of analyst, researcher, trader, risk, and portfolio-manager nodes connected into a financial decision workflow.
+    resources:
+      - res_20260518_tradingagents_589b351
+  evaluate-ai-trading-agent-risk:
+    title: Evaluate AI trading agent risk
+    description: Use trading-agent projects as cautionary references for model uncertainty, data quality, prompt injection, financial advice boundaries, and evaluation gaps.
+    resources:
+      - res_20260518_tradingagents_589b351

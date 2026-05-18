@@ -8,3 +8,4 @@
 - 2026-05-18 | full-analysis | added `mineru` | source `opendatalab/MinerU@603de17` | multi-agent intake; recommended with caveats for RAG document parsing, custom license, and offline boundary
 - 2026-05-18 | full-analysis | added `architecture-diagram-generator` | source `Cocoon-AI/architecture-diagram-generator@4b9087d` | sequential source/value review fallback; recommended with caveats for Claude Skills dependency and external font/CDN export assets
 - 2026-05-18 | full-analysis | added `cli-anything` | source `HKUDS/CLI-Anything@a32f11f` | sequential source/value review fallback; recommended with caveats for agent-native CLI generation, install risk, analytics, and real backend/API boundaries
+- 2026-05-18 | full-analysis | added `tradingagents` | source `liqidong/TradingAgents@589b351` | sequential source/value review fallback; recommended with caveats for multi-agent financial workflow study, stale fork freshness, and real-money trading risk

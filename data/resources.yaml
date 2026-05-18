@@ -629,3 +629,97 @@ resources:
       github_license_spdx: Apache-2.0
       local_license_file: Apache-2.0
       primary_language: Python
+  - resource_id: res_20260518_tradingagents_589b351
+    canonical_slug: tradingagents
+    aliases:
+      - TradingAgents
+      - TradingAgents Framework
+      - liqidong/TradingAgents
+      - TauricResearch/TradingAgents
+      - Multi-Agents LLM Financial Trading Framework
+    title: TradingAgents
+    resource_type: github_repo
+    source_kind: github
+    source_url: https://github.com/liqidong/TradingAgents
+    canonical_source: https://github.com/TauricResearch/TradingAgents
+    local_source: sources/github/liqidong__TradingAgents/
+    source_fingerprints:
+      - git:589b351f2ab55a8a37d846848479cebc810a5a36
+      - tree-content-sha256:2c61fb2b650ad76aaeb63798172de118d0f9ea524a59ef1b2c31b7d3bc285cca
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: 589b351f2ab55a8a37d846848479cebc810a5a36
+    upstream_ref: 589b351f2ab55a8a37d846848479cebc810a5a36
+    parent_upstream_ref: 61522e103e61601c553b4544abcd53fa7ebf9f1d
+    upstream_version: fork main@589b351 / parent v0.2.5 main@61522e1
+    latest_release: parent v0.2.5
+    update_status: fork_stale_parent_current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: useful_fast_moving
+    recommendation: recommended_with_caveats
+    fit_for_user: medium_high
+    time_to_value: medium
+    setup_cost: high
+    maintenance_burden: high
+    risk_level: high
+    evidence_quality: medium_high
+    will_i_actually_use_this: maybe
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: en
+    redaction_needed: no
+    tags:
+      - financial-agent
+      - ai-trading
+      - multi-agent-framework
+      - langgraph
+      - agent-framework
+      - investment-research
+      - market-data
+      - risk-management
+      - open-source-template
+    use_cases:
+      - study-multi-agent-financial-workflows
+      - learn-langgraph-financial-agent-architecture
+      - evaluate-ai-trading-agent-risk
+    recommended_for:
+      - 学习如何用 LangGraph 组织分析师、研究员、交易员、风控和组合经理等多角色 agent
+      - 研究金融 agent 的数据接入、辩论流程、记忆、最终交易提案和 CLI 体验
+      - 作为高风险 AI trading 工具的风险边界、评估要求和用户提示案例
+    not_recommended_for:
+      - 真实资金自动交易、投资建议或无需人工复核的买卖决策
+      - 只想用用户提供的 liqidong fork 跟进最新上游功能的人
+      - 无法配置 LLM/API key、市场数据源、Python 环境和成本控制的用户
+    confidence: medium_high
+    community_signal:
+      observed_at: 2026-05-18
+      fork_repository: liqidong/TradingAgents
+      fork_stars: 0
+      fork_forks: 0
+      fork_open_issues_plus_prs: 0
+      fork_has_issues: false
+      fork_has_pages: false
+      fork_homepage: https://arxiv.org/pdf/2412.20138
+      fork_license_spdx: Apache-2.0
+      fork_primary_language:
+      fork_created_at: 2026-03-23T09:04:00Z
+      fork_pushed_at: 2026-03-22T23:51:27Z
+      fork_tags: 0
+      fork_releases: 0
+      parent_repository: TauricResearch/TradingAgents
+      parent_stars: 76706
+      parent_forks: 14945
+      parent_subscribers: 606
+      parent_open_issues_plus_prs: 344
+      parent_has_pages: true
+      parent_homepage: https://arxiv.org/pdf/2412.20138
+      parent_license_spdx: Apache-2.0
+      parent_primary_language: Python
+      parent_latest_release: v0.2.5
+      parent_latest_release_published_at: 2026-05-11T09:27:40Z
+      parent_default_branch_ref: 61522e103e61601c553b4544abcd53fa7ebf9f1d
+      parent_commits_ahead_of_reviewed_fork: 76
+      local_license_file: Apache-2.0

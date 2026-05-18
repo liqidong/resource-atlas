@@ -32,6 +32,24 @@ tags:
   langgraph:
     aliases: []
     description: Resources using LangGraph state graphs, nodes, and edges.
+  multi-agent-framework:
+    aliases: [multiagent, multi-agent-system]
+    description: Frameworks that coordinate multiple specialized AI agents.
+  financial-agent:
+    aliases: [finance-agent]
+    description: AI agents or workflows for financial analysis, market research, or portfolio decision support.
+  ai-trading:
+    aliases: [llm-trading, trading-agent]
+    description: AI-assisted trading research, simulation, strategy discussion, or trade-decision tooling.
+  investment-research:
+    aliases: [financial-research]
+    description: Resources for analyzing companies, markets, fundamentals, sentiment, news, or investment theses.
+  market-data:
+    aliases: [financial-data]
+    description: Resources that fetch, transform, cache, or reason over market and financial data feeds.
+  risk-management:
+    aliases: [portfolio-risk]
+    description: Resources that model risk, debate exposure, or support portfolio management decisions.
   langchain:
     aliases: []
     description: Resources built on LangChain ecosystem packages.

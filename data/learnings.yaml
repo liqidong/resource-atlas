@@ -166,3 +166,20 @@ learnings:
       - AGENTS.md
       - docs/intake-policy.md
     note: This closes the gap where README looked stale because the finished resource lived only on an intake branch.
+  - learning_id: learn_20260518_github_fork_parent_freshness
+    date: 2026-05-18
+    type: quality_bar
+    trigger: TradingAgents intake used a user-provided GitHub fork whose parent repository had active releases and was 76 commits ahead of the reviewed fork.
+    root_cause: GitHub fork pages can look like the main project while having different freshness, releases, issue settings, and community signal.
+    future_rule: When a user-provided GitHub source is a fork, record whether the atlas entry evaluates the fork, the parent project, or both; capture parent identity and freshness when available; and label fork metrics separately from parent metrics.
+    applies_to:
+      - full-analysis
+      - quick-card
+      - refresh-update
+      - github-resources
+      - source-provenance
+    status: promoted
+    promoted_to:
+      - AGENTS.md
+      - docs/intake-policy.md
+    note: This prevents stale forks from inheriting parent credibility without evidence.

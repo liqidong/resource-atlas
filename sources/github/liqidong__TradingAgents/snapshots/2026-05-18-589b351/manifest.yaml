@@ -1,0 +1,87 @@
+source: https://github.com/liqidong/TradingAgents
+fetched_at: 2026-05-18
+source_ref: 589b351f2ab55a8a37d846848479cebc810a5a36
+commit_date: 2026-03-22T23:47:56Z
+commit_subject: TradingAgents v0.2.2
+content_hash: 2c61fb2b650ad76aaeb63798172de118d0f9ea524a59ef1b2c31b7d3bc285cca
+fetch_method: git clone --depth=1 plus GitHub API, GitHub compare API, and arXiv page review
+files_in_upstream_clone: 79
+temporary_clone_size: 9.0M
+github_api:
+  observed_at: 2026-05-18
+  fork:
+    repository: liqidong/TradingAgents
+    created_at: 2026-03-23T09:04:00Z
+    updated_at: 2026-03-23T09:04:01Z
+    pushed_at: 2026-03-22T23:51:27Z
+    stars: 0
+    forks: 0
+    subscribers: 0
+    open_issues_plus_prs: 0
+    has_issues: false
+    has_pages: false
+    homepage: https://arxiv.org/pdf/2412.20138
+    license_spdx: Apache-2.0
+    tags: 0
+    releases: 0
+  parent:
+    repository: TauricResearch/TradingAgents
+    observed_ref: 61522e103e61601c553b4544abcd53fa7ebf9f1d
+    updated_at: 2026-05-18T09:04:42Z
+    pushed_at: 2026-05-17T07:54:07Z
+    stars: 76706
+    forks: 14945
+    subscribers: 606
+    open_issues_plus_prs: 344
+    has_pages: true
+    homepage: https://arxiv.org/pdf/2412.20138
+    license_spdx: Apache-2.0
+    primary_language: Python
+    latest_release: v0.2.5
+    latest_release_published_at: 2026-05-11T09:27:40Z
+compare:
+  base_reviewed_fork_ref: 589b351f2ab55a8a37d846848479cebc810a5a36
+  parent_default_branch_ref: 61522e103e61601c553b4544abcd53fa7ebf9f1d
+  status: ahead
+  parent_commits_ahead: 76
+  parent_commits_behind: 0
+arxiv:
+  observed_at: 2026-05-18
+  identifier: "2412.20138"
+  title: "TradingAgents: Multi-Agents LLM Financial Trading Framework"
+  submitted_at: 2024-12-28
+  latest_revision: v7
+  latest_revision_at: 2025-06-03
+  subjects:
+    - q-fin.TR
+    - cs.AI
+    - cs.CE
+    - cs.LG
+inventory:
+  python_files_under_tradingagents_agents: 20
+  source_files_excluding_git: 79
+  visible_test_files: 1
+  package_version: 0.2.2
+  requires_python: ">=3.10"
+files_included:
+  - snapshot.md
+files_excluded:
+  - full upstream source tree
+  - git metadata
+  - assets and screenshots
+  - dependency caches
+exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, validation result, and evidence summary instead of vendoring the full fork.
+validation:
+  - command: python3 -m compileall -q cli tradingagents tests main.py test.py
+    working_directory: temporary upstream clone
+    output: Passed under Python 3.9.6
+  - command: python3 -m unittest tests/test_ticker_symbol_handling.py
+    working_directory: temporary upstream clone
+    output: Failed before test execution because questionary was not installed in the local environment
+  - command: inspect graph setup, dataflow routing, LLM clients, CLI, README, tests, and license
+    working_directory: temporary upstream clone
+    output: Reviewed for structure, network/API boundaries, and fork freshness
+license: Apache-2.0
+sensitivity: public
+publishable: partial
+notes: Full source was reviewed from a temporary clone and not committed into this repository. The reviewed source is a fork; parent freshness and community signal are labeled separately.

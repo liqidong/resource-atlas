@@ -98,6 +98,8 @@ If evidence is thin, say so plainly.
 
 For resources that claim to be local, private, offline, or self-hosted, verify the actual network boundary. Check whether LLM calls, search, telemetry, web fetch, browser UI, model hosting, or APIs still leave the local machine.
 
+For user-provided GitHub forks, identify the parent/source repository when available, compare the reviewed fork ref against the parent default branch or latest release, and label fork metrics separately from parent project community signal.
+
 Before marking an entry public-ready, calibrate machine-readable fields against the narrative judgment. Preserve meaningful caveats in `recommendation`, treat stars/forks/issues as volatile community signal rather than proof of quality, and avoid publishing absolute temporary or home-directory paths in evidence notes.
 
 ## Self-Improvement

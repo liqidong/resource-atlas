@@ -1,0 +1,37 @@
+source_url: https://github.com/liqidong/TradingAgents
+source_kind: github
+owner: liqidong
+repo: TradingAgents
+default_branch: main
+reviewed_ref: 589b351f2ab55a8a37d846848479cebc810a5a36
+reviewed_at: 2026-05-18
+license: Apache-2.0
+github_license_spdx: Apache-2.0
+github_api_observed_at: 2026-05-18
+github_stars: 0
+github_forks: 0
+github_open_issues_plus_prs: 0
+github_has_issues: false
+github_pages: false
+homepage: https://arxiv.org/pdf/2412.20138
+fork: true
+parent:
+  source_url: https://github.com/TauricResearch/TradingAgents
+  owner: TauricResearch
+  repo: TradingAgents
+  default_branch: main
+  observed_ref: 61522e103e61601c553b4544abcd53fa7ebf9f1d
+  latest_release: v0.2.5
+  latest_release_published_at: 2026-05-11T09:27:40Z
+  stars: 76706
+  forks: 14945
+  subscribers: 606
+  open_issues_plus_prs: 344
+  pages: true
+  primary_language: Python
+  compare_from_reviewed_ref:
+    status: ahead
+    parent_commits_ahead: 76
+    parent_commits_behind: 0
+resource_id: res_20260518_tradingagents_589b351
+snapshot: snapshots/2026-05-18-589b351/
