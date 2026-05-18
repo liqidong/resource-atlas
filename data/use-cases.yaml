@@ -89,3 +89,18 @@ use_cases:
     description: Learn how lifecycle hooks, REST endpoints, MCP tools, and local viewers can work together to capture and recall coding-agent context.
     resources:
       - res_20260518_agentmemory_9061da5
+  create-architecture-diagrams:
+    title: Create architecture diagrams
+    description: Generate clear system, cloud, security, or network architecture diagrams from natural-language descriptions.
+    resources:
+      - res_20260518_architecture_diagram_generator_4b9087d
+  document-system-architecture:
+    title: Document system architecture
+    description: Produce shareable architecture visuals and summaries for README files, design docs, reviews, and stakeholder communication.
+    resources:
+      - res_20260518_architecture_diagram_generator_4b9087d
+  study-agent-skill-packaging:
+    title: Study agent skill packaging
+    description: Learn how lightweight agent skills package instructions, templates, examples, and installable archives.
+    resources:
+      - res_20260518_architecture_diagram_generator_4b9087d

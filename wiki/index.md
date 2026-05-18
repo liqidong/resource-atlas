@@ -10,6 +10,7 @@ Machine-readable source of truth: [`data/resources.yaml`](../data/resources.yaml
 - [OmegaWiki](resources/omegawiki.md) — Claude Code-powered research wiki platform; valuable as a full research workflow architecture, with significant setup and privacy/permission caveats.
 - [UI-TARS Desktop](resources/ui-tars-desktop.md) — multimodal computer-use agent stack for studying screenshot-to-action GUI/browser automation, with high privacy and runtime caveats.
 - [MinerU](resources/mineru.md) — high-adoption document parsing engine for PDFs, scanned docs, images, and Office files; strong for RAG ingestion, but setup, license, and offline claims need caveats.
+- [Architecture Diagram Generator](resources/architecture-diagram-generator.md) — lightweight Claude skill for turning architecture descriptions into polished dark-theme HTML/SVG diagrams; fast and useful, but dependent on Claude Skills and external font/CDN assets by default.
 
 ## Watchlist
 

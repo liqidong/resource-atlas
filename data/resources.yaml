@@ -462,3 +462,84 @@ resources:
       npm_published_at: 2026-05-17T13:08:58.790Z
       github_license_spdx: Apache-2.0
       local_license_file: Apache-2.0
+  - resource_id: res_20260518_architecture_diagram_generator_4b9087d
+    canonical_slug: architecture-diagram-generator
+    aliases:
+      - Architecture Diagram Generator
+      - architecture-diagram
+      - Cocoon-AI/architecture-diagram-generator
+      - Cocoon AI Architecture Diagram Generator
+    title: Architecture Diagram Generator
+    resource_type: agent_skill
+    source_kind: github
+    source_url: https://github.com/Cocoon-AI/architecture-diagram-generator
+    canonical_source: https://github.com/Cocoon-AI/architecture-diagram-generator
+    local_source: sources/github/Cocoon-AI__architecture-diagram-generator/
+    source_fingerprints:
+      - git:4b9087d55268c79a935105439dbcd37b630fc3f3
+      - tree-content-sha256:b17e700ec171319d2b3a08bcdceaaf4b9c2521ab5bdf3b13e32ab922c72387aa
+      - zip-sha256:52ef080c73c7d970ee1afb0ae1757d29693a0a89a0b265982984c95cf63b49b1
+    date_added: 2026-05-18
+    last_checked: 2026-05-18
+    last_reviewed: 2026-05-18
+    reviewed_source_ref: 4b9087d55268c79a935105439dbcd37b630fc3f3
+    upstream_ref: 4b9087d55268c79a935105439dbcd37b630fc3f3
+    upstream_version: v1.1 / main@4b9087d
+    latest_release: Built-in Export Toolbar
+    update_status: current
+    review_status: reviewed
+    lifecycle_status: shortlisted
+    maturity: useful_lightweight
+    recommendation: recommended_with_caveats
+    fit_for_user: high
+    time_to_value: low
+    setup_cost: low
+    maintenance_burden: low
+    risk_level: medium
+    evidence_quality: high
+    will_i_actually_use_this: yes
+    public_ready: yes
+    private_notes: no
+    source_publishable: partial
+    language: en
+    redaction_needed: no
+    tags:
+      - agent-skills
+      - claude-skills
+      - architecture-diagrams
+      - diagram-generation
+      - system-architecture
+      - technical-documentation
+      - html-svg
+      - open-source-template
+    use_cases:
+      - create-architecture-diagrams
+      - document-system-architecture
+      - study-agent-skill-packaging
+    recommended_for:
+      - 从自然语言系统描述快速生成深色主题 HTML/SVG 架构图
+      - 给 README、设计文档、汇报材料或架构评审做第一版可分享图
+      - 学习一个极小 Claude skill 如何包装说明、模板、示例和上传 zip
+    not_recommended_for:
+      - 需要自动从代码库严格抽取架构并验证拓扑正确性的场景
+      - 需要离线、无外部字体/CDN、无 Claude.ai 依赖的图表生成流程
+      - 需要通用图表 DSL、Mermaid/PlantUML 兼容或复杂交互编辑器的人
+    confidence: high
+    community_signal:
+      observed_at: 2026-05-18
+      stars_display: "5.1k"
+      forks: 385
+      watchers: 8
+      open_issues: 0
+      open_pull_requests: 0
+      commit_count: 12
+      github_license_display: MIT
+      local_license_file: MIT
+      latest_release: Built-in Export Toolbar
+      latest_release_tag: "1.1"
+      latest_release_published_at: 2026-05-09T02:08:10Z
+      tags:
+        - "1.1"
+        - "1.0"
+      primary_language: HTML
+      github_api_status: unauthenticated_rate_limited

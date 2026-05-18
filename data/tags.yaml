@@ -164,3 +164,21 @@ tags:
   iii-engine:
     aliases: [iii-sdk]
     description: Resources built on the iii engine or iii SDK primitives such as functions, triggers, KV state, streams, and telemetry.
+  claude-skills:
+    aliases: [claude-ai-skills, custom-skills]
+    description: Resources packaged as Claude custom skills with SKILL.md instructions and optional resources.
+  architecture-diagrams:
+    aliases: [architecture-visualization, system-diagrams]
+    description: Resources for visualizing software, infrastructure, cloud, security, or network architecture.
+  diagram-generation:
+    aliases: [diagramming, ai-diagrams]
+    description: Tools or workflows that generate diagrams from natural-language descriptions or structured prompts.
+  system-architecture:
+    aliases: [software-architecture, infrastructure-architecture]
+    description: Resources that help describe, analyze, communicate, or review system architecture.
+  technical-documentation:
+    aliases: [engineering-docs, docs]
+    description: Resources that help produce technical documentation, diagrams, runbooks, or explanatory artifacts.
+  html-svg:
+    aliases: [standalone-html, inline-svg]
+    description: Resources that produce or rely on standalone HTML and inline SVG artifacts.

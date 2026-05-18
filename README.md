@@ -20,6 +20,7 @@ This repo is not a bookmark list. Each durable entry should answer:
 | [OmegaWiki](wiki/resources/omegawiki.md) | GitHub repo | Recommended with caveats | Claude Code research OS, persistent research wiki, paper discovery and academic writing workflows |
 | [UI-TARS Desktop](wiki/resources/ui-tars-desktop.md) | GitHub repo | Recommended with caveats | GUI/computer-use agent architecture, desktop/browser operators, VLM action loops, MCP/browser infra |
 | [MinerU](wiki/resources/mineru.md) | GitHub repo | Recommended with caveats | Parsing PDFs, scanned docs, images, and Office files into Markdown/JSON for RAG and agent workflows |
+| [Architecture Diagram Generator](wiki/resources/architecture-diagram-generator.md) | Agent skill | Recommended with caveats | Fast dark-theme HTML/SVG architecture diagrams, Claude custom skill packaging, technical documentation visuals |
 
 ## Use-Case Entrypoints
 
@@ -41,6 +42,9 @@ This repo is not a bookmark list. Each durable entry should answer:
 - [Parse documents for RAG](wiki/use-cases/parse-documents-for-rag.md)
 - [Build a local document parsing pipeline](wiki/use-cases/build-local-document-parsing-pipeline.md)
 - [Compare document parsers](wiki/use-cases/compare-document-parsers.md)
+- [Create architecture diagrams](wiki/use-cases/create-architecture-diagrams.md)
+- [Document system architecture](wiki/use-cases/document-system-architecture.md)
+- [Study agent skill packaging](wiki/use-cases/study-agent-skill-packaging.md)
 
 ## Intake Modes
 
