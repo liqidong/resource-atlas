@@ -10,6 +10,7 @@ Resource pages may contain personal judgment. Before presenting a page as public
 Redact or rewrite:
 
 - private local paths
+- absolute temporary clone paths, unless they are necessary evidence
 - unpublished personal preferences
 - long copied source excerpts
 - sensitive toolchain details

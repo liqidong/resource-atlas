@@ -40,6 +40,8 @@ If evidence is thin, say so plainly.
 
 For resources that claim to be local, private, offline, or self-hosted, verify the actual network boundary. Check whether LLM calls, search, telemetry, web fetch, browser UI, model hosting, or APIs still leave the local machine.
 
+Before marking an entry public-ready, calibrate machine-readable fields against the narrative judgment. Preserve meaningful caveats in `recommendation`, treat stars/forks/issues as volatile community signal rather than proof of quality, and avoid publishing absolute temporary or home-directory paths in evidence notes.
+
 ## Self-Improvement
 
 If the user corrects the workflow, a reviewer catches a repeatable issue, or verification exposes a reusable process problem, add a learning.

@@ -27,9 +27,10 @@ files_excluded:
   - git metadata
 exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, validation result, and evidence summary instead of vendoring the full implementation.
 validation:
-  command: python3 -m py_compile /tmp/local-deep-researcher-intake/src/ollama_deep_researcher/*.py
+  command: python3 -m py_compile src/ollama_deep_researcher/*.py
+  working_directory: temporary upstream clone
   output: py_compile OK
 license: MIT
 sensitivity: public
 publishable: partial
-notes: Full source was reviewed from a temporary clone at /tmp/local-deep-researcher-intake and not committed into this repository.
+notes: Full source was reviewed from a temporary clone and not committed into this repository.

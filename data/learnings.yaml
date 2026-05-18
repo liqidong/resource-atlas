@@ -28,3 +28,19 @@ learnings:
     promoted_to:
       - AGENTS.md
     note: This prevents overstating privacy or local execution guarantees.
+  - learning_id: learn_20260518_calibrate_public_intake_metadata
+    date: 2026-05-18
+    type: quality_bar
+    trigger: Intake review found that a caveated narrative judgment could be flattened into a plain machine-readable recommendation, and validation evidence could leak temporary clone paths into public-ready pages.
+    root_cause: Resource pages, data records, and source manifests are written in parallel, so narrative nuance and public hygiene can drift unless there is a final calibration pass.
+    future_rule: Before finalizing a public-ready intake, align machine-readable recommendation fields with narrative caveats, treat community metrics as volatile advisory signal, and avoid absolute temporary or home-directory paths in evidence notes.
+    applies_to:
+      - full-analysis
+      - refresh-update
+      - public-redaction
+    status: active
+    promoted_to:
+      - AGENTS.md
+      - docs/intake-policy.md
+      - docs/public-redaction-policy.md
+    note: This keeps future entries more useful for automated lookup and safer to publish.

@@ -22,7 +22,7 @@ update_status: current
 review_status: reviewed
 lifecycle_status: shortlisted
 maturity: useful
-recommendation: recommended
+recommendation: recommended_with_caveats
 fit_for_user: high
 time_to_value: medium
 setup_cost: medium
@@ -183,7 +183,7 @@ Docker exists, but it only runs the LangGraph service. It does not include Ollam
 - `src/ollama_deep_researcher/lmstudio.py`: LM Studio OpenAI-compatible wrapper.
 - `Dockerfile`: LangGraph server container, but no bundled Ollama.
 
-Local validation: `python3 -m py_compile /tmp/local-deep-researcher-intake/src/ollama_deep_researcher/*.py` passed.
+Local validation: `python3 -m py_compile src/ollama_deep_researcher/*.py` passed from a temporary clone.
 
 ## What It Can Do Well
 

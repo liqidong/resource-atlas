@@ -92,7 +92,7 @@ resources:
     review_status: reviewed
     lifecycle_status: shortlisted
     maturity: useful
-    recommendation: recommended
+    recommendation: recommended_with_caveats
     fit_for_user: high
     time_to_value: medium
     setup_cost: medium

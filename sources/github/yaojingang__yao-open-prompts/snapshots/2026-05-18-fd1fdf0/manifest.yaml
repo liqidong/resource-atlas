@@ -36,6 +36,7 @@ files_excluded:
 exclusion_reason: Keep Resource Atlas lightweight; store source ref, manifest, and evidence summary instead of vendoring the full prompt library.
 validation:
   command: python3 scripts/check_repo.py
+  working_directory: temporary upstream clone
   output: Checked 234 prompt files. OK
 metadata_findings:
   missing_created_field:
@@ -45,4 +46,4 @@ metadata_findings:
 license: CC BY 4.0 for prompt text
 sensitivity: public
 publishable: partial
-notes: Full source was reviewed from a temporary clone at /tmp/yao-open-prompts-intake and not committed into this repository.
+notes: Full source was reviewed from a temporary clone and not committed into this repository.

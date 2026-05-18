@@ -32,6 +32,14 @@ Default workflow:
 8. Append `wiki/log.md`.
 9. Check whether the intake revealed a reusable process lesson. If yes, update `data/learnings.yaml` and `wiki/learnings/`.
 
+## Field Calibration
+
+Before marking a full analysis public-ready or updating README:
+
+- Make `recommendation` in `data/resources.yaml` and page frontmatter as specific as the narrative judgment. Use values such as `recommended_with_caveats` when caveats materially change how the resource should be used.
+- Separate stable evidence from volatile community signal. Commit refs, content hashes, license files, and validation results are evidence; stars, forks, and issue counts are advisory snapshots with `observed_at` dates.
+- Write validation commands and source paths in public artifacts as repo-relative or temporary-clone-relative paths. Do not publish absolute `/tmp`, home-directory, or machine-specific paths unless they are necessary evidence.
+
 ## Refresh / Update
 
 Use when an already analyzed resource may have changed.
