@@ -50,6 +50,11 @@ in a dedicated worktree, keep a single-resource diff scoped to that resource,
 and split the work if a non-batch branch accumulates multiple intake pages or
 source roots.
 
+The intake branch is an isolation tool, not the default final destination. Unless
+the user explicitly asks for a PR, branch-only handoff, or unmerged review
+branch, validated resource intake should be fast-forwarded or merged into
+`main` and pushed to `origin/main` before it is called complete.
+
 ## Submission Completion Contract
 
 When the user asks an agent to submit, commit, push, or finish an intake, "done"
@@ -59,6 +64,8 @@ written in one window. Before claiming completion:
 - Verify `ruby scripts/validate-atlas.rb` passes.
 - Verify the submitted commit is on the expected upstream branch and report the
   commit SHA.
+- For normal Resource Atlas intake, the expected upstream branch is `origin/main`
+  unless the user explicitly requested a PR or branch-only workflow.
 - Verify `README.md`, `wiki/index.md`, and `wiki/log.md` show the resource when
   the resource is shortlisted, recommended, or otherwise meant to be discoverable.
 - If working on `main`, make sure it is not behind `origin/main`; fast-forward

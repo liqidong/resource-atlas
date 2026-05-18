@@ -57,14 +57,20 @@ worktrees/branches by default. Only use a batch branch when batch mode is
 explicitly requested; in batch mode, keep one commit per resource and reserve a
 separate integration commit for cross-resource links or shared cleanup.
 
+The resource branch is for isolation while the intake is being written. Unless
+the user explicitly asks for a pull request, review branch, or branch-only
+handoff, the default landing target for completed Resource Atlas intake is
+`main`, pushed to `origin/main`.
+
 ## Submission Completion Gate
 
 For submit, commit, push, or "finish this intake" requests, completion requires a
 visibility check across the local checkout and upstream:
 
 1. Run `ruby scripts/validate-atlas.rb`.
-2. Confirm the expected commit is reachable from the target upstream branch,
-   such as `origin/main`, and report the SHA in the handoff.
+2. Confirm the expected commit is reachable from the target upstream branch and
+   report the SHA in the handoff. For normal intake, this means `origin/main`,
+   not only `origin/codex/{slug}`.
 3. Confirm discoverable resources appear in `README.md`, `wiki/index.md`, and
    `wiki/log.md` when the policy says those front doors should be updated.
 4. Check `git status --short --branch`. If the current `main` is behind

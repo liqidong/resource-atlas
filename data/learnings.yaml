@@ -149,3 +149,20 @@ learnings:
     promoted_to:
       - scripts/validate-atlas.rb
     note: The validator now uses map plus compact for branch-scope path collection so direct ruby invocation works on Ruby 2.6.
+  - learning_id: learn_20260518_default_intake_lands_on_main
+    date: 2026-05-18
+    type: process
+    trigger: CLI-Anything intake was pushed to origin/codex/cli-anything, but the repository main branch and README did not update until the branch was fast-forwarded into main.
+    root_cause: The workflow treated the resource branch as a valid submission endpoint even though the user's expected front door is main/README by default.
+    future_rule: Resource branches are isolation workspaces, not default final destinations. Unless the user explicitly asks for a PR, review branch, or branch-only handoff, completed Resource Atlas intake must be merged or fast-forwarded into main and pushed to origin/main before being called complete.
+    applies_to:
+      - full-analysis
+      - quick-card
+      - refresh-update
+      - branch-management
+      - submission
+    status: promoted
+    promoted_to:
+      - AGENTS.md
+      - docs/intake-policy.md
+    note: This closes the gap where README looked stale because the finished resource lived only on an intake branch.
